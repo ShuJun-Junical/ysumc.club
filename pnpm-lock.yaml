@@ -11,6 +11,9 @@ dependencies:
   aos:
     specifier: ^2.3.4
     version: 2.3.4
+  jarallax:
+    specifier: ^2.1.4
+    version: 2.1.4
 
 devDependencies:
   '@nuxt/devtools':
@@ -3995,6 +3998,12 @@ packages:
       '@pkgjs/parseargs': 0.11.0
     dev: true
 
+  /jarallax@2.1.4:
+    resolution: {integrity: sha512-MZHX2JNKj5sply24QSTrF5hdK0HGDe26YJcGvO3u0rI3ls348KSYPONCQTJ2A3EdM/8k4rjwgW+AdxeLeY8E5A==}
+    dependencies:
+      video-worker: 2.1.5
+    dev: false
+
   /jiti@1.19.1:
     resolution: {integrity: sha512-oVhqoRDaBXf7sjkll95LHVS6Myyyb1zaunVwk4Z0+WPSW4gjS0pl01zYKHScTuyEhQsFxV5L4DR5r+YqSyqyyg==}
     hasBin: true
@@ -6783,6 +6792,10 @@ packages:
     dependencies:
       builtins: 5.0.1
     dev: true
+
+  /video-worker@2.1.5:
+    resolution: {integrity: sha512-lX6mywHsMeo2fB8smiaffQYpkcBaQh63oVrAsGekAOoIE5dv39YchJhZ6rresiNcJHy+Hv59dd+1yZs08jnFXA==}
+    dev: false
 
   /vite-node@0.33.0(@types/node@18.17.3)(sass@1.66.1):
     resolution: {integrity: sha512-19FpHYbwWWxDr73ruNahC+vtEdza52kA90Qb3La98yZ0xULqV8A5JLNPUff0f5zID4984tW7l3DH2przTJUZSw==}

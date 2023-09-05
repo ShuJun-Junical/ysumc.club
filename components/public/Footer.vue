@@ -12,6 +12,7 @@
             ><NuxtLink
               v-if="i.link"
               :to="i.link"
+              :target="isOutLink(i.link) ? '_blank' : ''"
               class="underline underline-offset-4"
               >{{ i.title }}</NuxtLink
             >
@@ -23,6 +24,7 @@
             <NuxtLink
               v-if="j.link"
               :to="j.link"
+              :target="isOutLink(j.link) ? '_blank' : ''"
               class="underline underline-offset-4 transition hover:text-gray-400"
               >{{ j.name }}</NuxtLink
             >
@@ -126,4 +128,10 @@ const externalLink = [
   },
   { name: 'afd', link: 'https://afdian.net/a/yusmc/', icon: 'mobi-mbri-cash' },
 ]
+
+function isOutLink(link: string | undefined) {
+  // 使用正则表达式判断是否为外链
+  const reg = /^http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?$/
+  return link ? reg.test(link) : false
+}
 </script>
