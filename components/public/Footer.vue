@@ -42,6 +42,7 @@
             >
               <span
                 :class="i.icon"
+                class="text-xl"
                 style="color: rgb(53, 53, 53); fill: rgb(53, 53, 53)"
               ></span>
             </a>

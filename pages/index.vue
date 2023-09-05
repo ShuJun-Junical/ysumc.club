@@ -16,4 +16,6 @@
   </PublicHero>
   <h1>233333</h1>
   <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <PublicJoin />
+  <PublicMUA />
 </template>
