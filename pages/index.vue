@@ -14,7 +14,7 @@
       亦是精彩之源。
     </div>
   </PublicHero>
-  <HomeCenterText title="我社简介">
+  <PublicCenterText title="我社简介">
     燕山大学Minecraft学生同好者协会（也可以叫燕山大学MC社）成立于2022年9月13日，<br />
     是以游戏《我的世界》（Minecraft）为核心开展同好活动和专业项目的学生社团，<br />
     <br />
@@ -23,10 +23,10 @@
     ><br />
     我们致力于为每一位来自燕山大学的Minecraft爱好者提供一个友好的交流平台，<br />
     并向外界展示Minecraft的趣味和价值。
-  </HomeCenterText>
+  </PublicCenterText>
   <HomeBigPicture />
   <HomeWhatIsMC />
-  <HomeCenterText title="趣味与价值">
+  <PublicCenterText title="趣味与价值">
     燕山大学Minecraft学生同好者协会虽然是游戏社团，但我们也不仅仅止于游戏的方方面面，<br />
     而是试着走出去，让Minecraft发挥更大的魅力。<br />
     <br />
@@ -43,7 +43,7 @@
     <strong
       >游戏带来趣味，项目和专业工作流带来价值，这也是燕山大学Minecraft学生同好者协会一直所坚持的事情。</strong
     >
-  </HomeCenterText>
+  </PublicCenterText>
   <HomeProjects />
   <PublicJoin />
   <HomeConactUs />

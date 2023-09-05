@@ -4,6 +4,7 @@
       <NuxtImg
         :src="props.image"
         class="absolute m-auto inset-0 -z-10 jarallax-img"
+        :class="{ 'brightness-50': props.dark }"
       />
       <div class="absolute w-full h-full">
         <slot></slot>
@@ -17,6 +18,7 @@ const { $jarallax } = useNuxtApp()
 
 const props = defineProps<{
   image: string
+  dark?: boolean
 }>()
 
 onMounted(() => {
