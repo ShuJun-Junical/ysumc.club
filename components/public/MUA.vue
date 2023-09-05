@@ -2,9 +2,9 @@
   <div class="w-full bg-white py-14">
     <div class="max-w-7xl mx-auto flex items-center">
       <div class="mr-auto max-w-2xl">
-        <div class="flex mb-4">
+        <div class="flex mb-4 items-center">
           <h1 class="text-7xl"><strong>我们联合</strong></h1>
-          <!-- <NuxtImg></NuxtImg> -->
+          <NuxtImg src="/img/logo/mua.svg" class="h-10 ml-auto"></NuxtImg>
         </div>
         <p class="text-xl leading-normal font-normal">
           我们并不孤独：不仅是我们，国内其他的著名高校也拥有着自己Minecraft同好群体甚至是Minecraft游戏社团。我们彼此联谊，精诚合作，联合高校Minecraft同好群体的力量，共同面对未来的挑战。

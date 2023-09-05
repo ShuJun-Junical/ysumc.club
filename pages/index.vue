@@ -1,7 +1,7 @@
 <template>
   <PublicHero image="/img/Index/Hero.png" class="mb-14">
     <div class="absolute left-8 top-24 w-full" data-aos="fade-up">
-      <NuxtImg src="/img/logo/ysumc.png" class="w-32" />
+      <NuxtImg src="/img/logo/ysumc-white.svg" class="w-32" />
       <h1 class="text-4xl font-normal text-white mt-3 font-ysumc">
         燕山大学Minecraft学生同好者协会
       </h1>
