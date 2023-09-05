@@ -44,6 +44,7 @@
       >游戏带来趣味，项目和专业工作流带来价值，这也是燕山大学Minecraft学生同好者协会一直所坚持的事情。</strong
     >
   </HomeCenterText>
+  <HomeProjects />
   <PublicJoin />
   <HomeConactUs />
   <PublicMUA />
