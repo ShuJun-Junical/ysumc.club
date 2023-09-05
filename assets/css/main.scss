@@ -5,3 +5,30 @@
 // AOS styles
 $aos-distance: 10px;
 @import 'node_modules/aos/src/sass/aos.scss';
+
+// Socion Icons
+@import '../external/socicon/css/styles.css';
+
+// Mobirise Icons
+@import '../external/mobirise-icons2/mobirise2.css';
+
+@font-face {
+  font-family: 'YSUMC';
+  font-weight: 400;
+  src:
+    url(../fonts/YSUMC_tandard_Minecraft_Font.ttf) format(truetype),
+    url(../fonts/YSUMC_tandard_Minecraft_Font.woff2) format(woff2);
+  font-display: swap;
+}
+
+.font-ysumc {
+  font-family: 'YSUMC', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f1f1f1;
+}

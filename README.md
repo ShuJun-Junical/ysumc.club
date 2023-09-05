@@ -1,63 +1,40 @@
-# Nuxt 3 Minimal Starter
+# 燕大MC社官网
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## To-Do
 
-## Setup
+WebSite
+|
+|-index: index.html
+|-work-in-progress: wip.html
+|-join
+| |-external-member: 外部成员.html
+| |-full-member: 正式社员.html
+|
+|-project
+| |-index: 项目页.html
+| |-work
+| | |-pixel-ysu: 复原计划.html
+| | |-online-ysu: 云游燕大.html
+| |
+| |-activity
+| | |-rpg-skbl-jhqsl: 时空悖论.html
+| | |-festival-party: 联谊会.html
+| | |-100min-construct: 建筑赛.html
+| |
+| |-workflow
+| | |-3d-print: 3dday.html
+| | |-visual-effect: 视效工作.html
+| | |-member-training: 培训工作.html
+| |
+| |-mcserver
+| |-ysu-server: 服务器.html
+| |-old-server: 原初服.html
+|
+|-gallery: 画廊.html
+|-document
+| |-index: 资料.html
+| |-visual-identity: 视觉识别规范.html
+| |-file-management: 档案管理.html
+| |-document-test: 档案测试页.html
 
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+一周年首页.html
