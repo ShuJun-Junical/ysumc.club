@@ -13,7 +13,6 @@
 </template>
 
 <script setup lang="ts">
-import 'jarallax/dist/jarallax.min.css'
 const { $jarallax } = useNuxtApp()
 
 const props = defineProps<{
