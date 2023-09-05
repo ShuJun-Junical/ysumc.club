@@ -127,7 +127,7 @@ const NavBarList = [
   {
     name: '项目',
     isMenu: false,
-    link: '/',
+    link: '/project',
   },
   {
     name: '资料',
@@ -137,14 +137,14 @@ const NavBarList = [
         name: '皮肤站设置',
         link: 'https://blog.ysumc.club/index.php/%E6%95%99%E7%A8%8B/54.html',
       },
-      { name: '我社报道', link: '/' },
+      { name: '我社报道', link: '/document' },
       { name: 'MC社网盘', link: 'http://cloud.ysumc.club' },
     ],
   },
   {
     name: '画廊',
     isMenu: false,
-    link: '/',
+    link: '/gallery',
   },
   {
     name: '联系我们',
