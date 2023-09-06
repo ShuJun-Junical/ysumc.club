@@ -1,3 +1,6 @@
 <template>
-  加入我们--外部成员，http://localhost:3000/old-site/外部成员.html
+  <PublicHero image="/img/Join/ExternalHero.png">
+    <JoinHeroText title="外部成员" text="简单轻松地享受一切" />
+  </PublicHero>
+  <PublicJoin />
 </template>
