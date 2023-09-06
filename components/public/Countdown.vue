@@ -7,7 +7,7 @@
     />
     <div class="text-center text-white max-w-4xl mx-auto">
       <h1 class="text-5xl font-ysumc" v-if="props.title">
-        <strong>{{ props.title }}</strong>
+        {{ props.title }}
       </h1>
       <div class="flex items-end mt-14 mb-8">
         <div

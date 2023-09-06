@@ -2,7 +2,7 @@
   <PublicHero image="/img/Project/Hero.png" dark>
     <div class="absolute top-1/3 w-full">
       <h1 class="text-7xl font-ysumc text-white text-center">
-        <strong>距离下一次危机还有</strong>
+        距离下一次危机还有
       </h1>
       <PublicCountdown :time="new Date('2024/2/10')"
         >这里是项目页，下滑以了解更多项目。</PublicCountdown
