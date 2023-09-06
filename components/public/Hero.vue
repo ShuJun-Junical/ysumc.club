@@ -1,12 +1,16 @@
 <template>
   <div class="w-full relative overflow-hidden">
-    <div class="relative h-screen jarallax">
+    <div class="relative h-screen jarallax flex items-center justify-center">
       <NuxtImg
         :src="props.image"
         class="absolute m-auto inset-0 -z-10 jarallax-img"
-        :class="{ 'brightness-50': props.dark }"
+        :class="props.dark ? `brightness-[${props.dark}]` : ''"
       />
-      <slot></slot>
+      <div v-if="title || text" class="text-white text-center">
+        <h1 v-if="title" class="text-5xl font-ysumc">{{ props.title }}</h1>
+        <p v-if="text" v-html="props.text" class="text-xl pt-6"></p>
+      </div>
+      <slot v-else></slot>
     </div>
   </div>
 </template>
@@ -16,7 +20,9 @@ const { $jarallax } = useNuxtApp()
 
 const props = defineProps<{
   image: string
-  dark?: boolean
+  dark?: number | string
+  title?: string
+  text?: string
 }>()
 
 onMounted(() => {
