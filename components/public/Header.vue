@@ -1,5 +1,7 @@
 <template>
-  <header class="fixed w-full z-30 bg-neutral-400/40 backdrop-blur-sm">
+  <header
+    class="fixed w-full z-30 bg-neutral-400/40 backdrop-blur-sm shadow-lg"
+  >
     <div
       class="mx-10 flex items-center justify-between transition-all duration-300 ease-in-out"
       :class="`${top ? 'h-20' : 'h-16'}`"
