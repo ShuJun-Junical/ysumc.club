@@ -4,7 +4,7 @@
       <h1 class="text-7xl font-ysumc text-white text-center">
         <strong>距离下一次危机还有</strong>
       </h1>
-      <PublicCountdown :time="new Date('2023/9/1')"
+      <PublicCountdown :time="new Date('2024/2/10')"
         >这里是项目页，下滑以了解更多项目。</PublicCountdown
       >
     </div>
@@ -27,6 +27,11 @@
       class="max-w-7xl mx-auto my-8"
     />
   </div>
+  <PublicCountdown
+    :time="new Date('2023/9.13')"
+    title="有人要过生日了。"
+    image="/img/Project/Activity-2.png"
+  ></PublicCountdown>
 </template>
 <script setup lang="ts">
 const project = [

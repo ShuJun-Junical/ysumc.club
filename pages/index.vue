@@ -49,7 +49,7 @@
   <HomeConactUs />
   <PublicMUA />
   <PublicCountdown
-    :time="new Date('2023/9/1')"
+    :time="new Date('2024/2/10')"
     title="距离下一次惊艳大家还剩下："
     image="/img/Index/Countdown.png"
   >
