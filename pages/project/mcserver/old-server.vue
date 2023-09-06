@@ -1,0 +1,1 @@
+<template>old-server</template>

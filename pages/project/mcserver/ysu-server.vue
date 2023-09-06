@@ -1,0 +1,1 @@
+<template>ysu-server</template>

@@ -1,0 +1,1 @@
+<template>pixel-ysu</template>

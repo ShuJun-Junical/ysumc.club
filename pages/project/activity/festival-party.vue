@@ -1,0 +1,1 @@
+<template>festival-party</template>
