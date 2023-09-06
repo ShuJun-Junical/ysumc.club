@@ -122,11 +122,6 @@ const mobileNavOpen = ref(false)
 
 const NavBarList = [
   {
-    name: '皮肤站',
-    isMenu: false,
-    link: 'https://skin.ysumc.club',
-  },
-  {
     name: '项目',
     isMenu: false,
     link: '/project',
@@ -147,6 +142,11 @@ const NavBarList = [
     name: '画廊',
     isMenu: false,
     link: '/gallery',
+  },
+  {
+    name: '皮肤站',
+    isMenu: false,
+    link: 'https://skin.ysumc.club',
   },
   {
     name: '联系我们',
