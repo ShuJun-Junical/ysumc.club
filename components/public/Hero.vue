@@ -6,9 +6,7 @@
         class="absolute m-auto inset-0 -z-10 jarallax-img"
         :class="{ 'brightness-50': props.dark }"
       />
-      <div class="absolute w-full h-full">
-        <slot></slot>
-      </div>
+      <slot></slot>
     </div>
   </div>
 </template>
