@@ -34,24 +34,11 @@ let timer: any = null
 
 const units = ['天', '时', '分', '秒']
 
+updateTime()
+
 watchEffect(() => {
   // 每隔一秒更新一次当前时间
-  timer = setInterval(() => {
-    currentTime.value = new Date()
-    const nowTime = currentTime.value.getTime()
-    const dateTime = props.time.getTime()
-    const diff = dateTime - nowTime
-    const day = Math.floor(diff / (24 * 3600 * 1000))
-    const hour = Math.floor((diff / (3600 * 1000)) % 24)
-    const minute = Math.floor((diff / (60 * 1000)) % 60)
-    const second = Math.floor((diff / 1000) % 60)
-    countDown.value = [
-      numProcess(day),
-      numProcess(hour),
-      numProcess(minute),
-      numProcess(second),
-    ]
-  }, 1000)
+  timer = setInterval(updateTime, 1000)
 })
 // 清除定时器
 onUnmounted(() => {
@@ -74,5 +61,22 @@ if (props.image)
 
 function numProcess(num: number) {
   return num < 0 ? '00' : num.toString().padStart(2, '0')
+}
+
+function updateTime() {
+  currentTime.value = new Date()
+  const nowTime = currentTime.value.getTime()
+  const dateTime = props.time.getTime()
+  const diff = dateTime - nowTime
+  const day = Math.floor(diff / (24 * 3600 * 1000))
+  const hour = Math.floor((diff / (3600 * 1000)) % 24)
+  const minute = Math.floor((diff / (60 * 1000)) % 60)
+  const second = Math.floor((diff / 1000) % 60)
+  countDown.value = [
+    numProcess(day),
+    numProcess(hour),
+    numProcess(minute),
+    numProcess(second),
+  ]
 }
 </script>
