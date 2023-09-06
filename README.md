@@ -5,14 +5,14 @@
 ```
 WebSite
 |
-|-index: index.html
-|-work-in-progress: wip.html
+|-✓index: index.html
 |-join
 | |-external-member: 外部成员.html
 | |-full-member: 正式社员.html
 |
 |-project
-| |-index: 项目页.html
+| |-✓index: 项目页.html
+| |-✓work-in-progress: wip.html
 | |-work
 | | |-pixel-ysu: 复原计划.html
 | | |-online-ysu: 云游燕大.html

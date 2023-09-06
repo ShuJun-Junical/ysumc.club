@@ -61,7 +61,7 @@ const project = [
         time: '预计于2023.9完成',
         state: 1,
         image: '/img/Project/WIP.png',
-        link: '',
+        link: '/project/work-in-progress',
       },
       {
         title: '《定格之中》虚拟校史馆',
