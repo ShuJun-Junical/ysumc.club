@@ -33,7 +33,7 @@
             </NuxtLink>
             <div
               v-if="i.isMenu"
-              class="absolute bg-gray-500 rounded-md transition-all ease-in-out hidden dropdown-menu"
+              class="absolute bg-gray4/90 backdrop-blur-md rounded-md transition-all ease-in-out hidden dropdown-menu"
             >
               <NuxtLink
                 v-for="j in i.contents"
@@ -177,14 +177,6 @@ function keyHandler(e: any) {
 </script>
 
 <style scoped>
-.angle {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #000;
-}
-
 .nav-button:hover > .dropdown-menu {
   display: block;
 }

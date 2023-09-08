@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="props.link" :target="$isOutlink(props.link) ? '_blank' : ''">
     <button
-      class="transition-colors py-2 px-4 rounded-md text-center text-lg border-[2.5px] font-bold"
+      class="transition-colors py-2 px-4 rounded-md text-center text-lg border-[2.5px] font-bold tracking-tight"
       :class="color ? colorList[color] : colorList.blue"
     >
       {{ props.text }}

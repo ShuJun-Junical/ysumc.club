@@ -71,7 +71,7 @@ const content = [
       },
       { name: '游戏配置' },
       { name: '我社报道' },
-      { name: '视觉形象规范', link: '/document/visual-identity' },
+      { name: '视觉形象', link: '/document/visual-identity' },
     ],
   },
   // {
