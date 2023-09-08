@@ -25,7 +25,7 @@
       :image="j.image"
       :link="j.link"
       :dark="j.dark || false"
-      class="max-w-7xl mx-6 md:mx-auto my-8"
+      class="max-w-7xl mx-6 lg:mx-auto my-8"
     />
   </div>
   <PublicCountdown
@@ -52,7 +52,7 @@ const project = [
       {
         title: '一个大工程',
         subtitle: '',
-        time: '预计于2023.9完成',
+        time: '预计于2024.1完成',
         state: 1,
         image: '/img/Project/WIP.png',
         link: '/project/work-in-progress',
@@ -72,7 +72,7 @@ const project = [
         time: '',
         state: 2,
         image: '/img/Project/WIP.png',
-        link: '',
+        link: '/egg/genshin',
       },
     ],
   },

@@ -115,7 +115,7 @@
 <script setup lang="ts">
 const top = ref(true)
 const mobileNavOpen = ref(false)
-const { $isOutlink } = useNuxtApp()
+const $isOutlink = inject('isOutlink')
 
 const NavBarList = [
   {

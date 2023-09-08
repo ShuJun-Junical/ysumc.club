@@ -62,7 +62,7 @@
 
 <script lang="ts" setup>
 import footerBkg from '~/assets/image/footer-bkg.png'
-const { $isOutlink } = useNuxtApp()
+const $isOutlink = inject('isOutlink')
 
 const content = [
   {

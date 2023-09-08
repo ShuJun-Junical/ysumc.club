@@ -9,7 +9,7 @@
   </NuxtLink>
 </template>
 <script setup lang="ts">
-const { $isOutlink } = useNuxtApp()
+const $isOutlink = inject('isOutlink')
 const props = defineProps<{
   text: string
   color?: 'blue' | 'pink' | 'gray'
