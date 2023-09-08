@@ -36,7 +36,7 @@ onMounted(() => {
   background-color: white;
   width: 100vw;
   height: 100vh;
-  /* z-index: 1000; */
+  z-index: 1000;
 }
 .gi-img {
   opacity: 0;
