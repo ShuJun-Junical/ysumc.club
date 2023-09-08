@@ -1,69 +1,65 @@
 <template>
   <footer
-    class="pt-12 pb-8 bg-no-repeat bg-center bg-cover"
+    class="bg-no-repeat bg-center bg-cover text-white py-4"
     :style="{ 'background-image': `url(${footerBkg})` }"
   >
-    <div
-      class="max-w-7xl mx-auto flex flex-nowrap items-start justify-evenly text-white font-normal"
-    >
-      <div v-for="i in content" class="w-1/4">
-        <p class="text-xl mb-2 font-ysumc">
-          <NuxtLink
-            v-if="i.link"
-            :to="i.link"
-            :target="$isOutlink(i.link) ? '_blank' : ''"
-            class=""
-            >{{ i.title }}</NuxtLink
-          >
-          <span v-else>{{ i.title }}</span>
-        </p>
-        <ul class="text-lg">
-          <li v-for="j in i.items" class="leading-relaxed">
-            <NuxtLink
-              v-if="j.link"
-              :to="j.link"
-              :target="$isOutlink(j.link) ? '_blank' : ''"
-              class="transition hover:text-gray-400"
-              >{{ j.name }}</NuxtLink
-            >
-            <a v-else :href="j.link" class="text-gray-400">{{ j.name }}</a>
-          </li>
-        </ul>
-        <div v-if="content.indexOf(i) === content.length - 1" class="my-8">
-          <p class="text-xl mb-2 font-ysumc">外部链接</p>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-12 pb-4 pt-8">
+        <!-- First block -->
+        <div class="col-span-3 col-end-4 flex flex-col justify-between">
+          <NuxtLink to="/" class="inline-block" aria-label="YSUMC">
+            <NuxtImg src="/img/logo/ysumc-text.svg" class="w-96" />
+          </NuxtLink>
           <div class="flex gap-2">
             <a
               v-for="i in externalLink"
-              class="w-10 h-10 bg-white rounded-full flex items-center justify-center"
+              class="w-10 h-10 flex items-center justify-center"
               :href="i.link"
               target="_blank"
             >
-              <span
-                :class="i.icon"
-                class="text-xl"
-                style="color: rgb(53, 53, 53); fill: rgb(53, 53, 53)"
-              ></span>
+              <span :class="i.icon" class="text-xl"></span>
             </a>
           </div>
         </div>
+        <div class="col-span-3" />
+        <div class="col-span-2" v-for="i in content" :key="i.title">
+          <h6 class="text-gray-800 font-medium mb-2">{{ i.title }}</h6>
+          <ul class="text-sm">
+            <li class="mb-2" v-for="j in i.items" :key="j.name">
+              <NuxtLink
+                :to="j.link"
+                :target="$isOutlink(j.link) ? '_blank' : ''"
+                class="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+              >
+                {{ j.name }}
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="mt-4 w-full text-center text-md text-gray">
-      “本社所有文案，图片均由燕山大学Minecraft学生同好者协会制作，未经允许，切勿盗取挪用，如若发现，将采取法律手段进行维权。”<br />
-      <a href="https://beian.miit.gov.cn" target="_blank"
-        >黔ICP备2022009898号-1</a
+
+      <!-- Bottom area -->
+      <div
+        class="md:flex md:items-center md:justify-between py-4 border-t border-gray text-gray"
       >
-      &copy; Copyright
-      {{ new Date().getFullYear() }} 顾梵，秋田同学拥有本网站一切解释权 - All
-      Rights Reserved
+        <div class="text-sm mr-4 content-start">
+          {{ new Date().getFullYear() }}{{ ' ' }}
+          &copy;
+          本社所有文案，图片均由燕山大学Minecraft学生同好者协会制作，未经允许，切勿盗取挪用，如若发现，将采取法律手段进行维权。
+        </div>
+        <div class="text-sm mr-4 content-end">
+          <a href="https://beian.miit.gov.cn" target="_blank"
+            >黔ICP备2022009898号-1</a
+          >
+        </div>
+      </div>
     </div>
   </footer>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import footerBkg from '~/assets/image/footer-bkg.png'
 const { $isOutlink } = useNuxtApp()
-
 const content = [
   {
     title: '资料',
@@ -78,23 +74,23 @@ const content = [
       { name: '视觉形象规范', link: '/document/visual-identity' },
     ],
   },
-  {
-    title: '项目',
-    link: '/project',
-    items: [
-      { name: '像素燕大：燕山大学复原计划', link: '/project/work/pixel-ysu' },
-      { name: '时空悖论系列', link: '/project/activity/rpg-skbl-jhqsl' },
-      { name: '云游燕大[WIP]', link: '/project/work/online-ysu' },
-    ],
-  },
+  // {
+  //   title: '项目',
+  //   link: '/project',
+  //   items: [
+  //     { name: '燕山大学复原计划', link: '/project/work/pixel-ysu' },
+  //     { name: '时空悖论系列', link: '/project/activity/rpg-skbl-jhqsl' },
+  //     { name: '云游燕大[WIP]', link: '/project/work/online-ysu' },
+  //   ],
+  // },
   {
     title: '外联',
     items: [
       { name: 'MUA高校联盟', link: 'https://www.mualliance.ltd/' },
-      { name: '上海交通大学Minecraft社', link: 'https://mc.sjtu.cn/' },
-      { name: '中南大学服务器', link: 'https://csu-mc.magicalsheep.cn/' },
+      { name: '上海交通大学', link: 'https://mc.sjtu.cn/' },
+      { name: '中南大学', link: 'https://csu-mc.magicalsheep.cn/' },
       {
-        name: '西安建筑科技大学Minecraft服务器',
+        name: '西安建筑科技大学',
         link: 'https://www.xauatcraft.com/',
       },
     ],
@@ -104,13 +100,12 @@ const content = [
     items: [
       { name: '燕山大学官方网站', link: 'http://ysu.edu.cn/' },
       {
-        name: '燕山大学Minecraft同好者协会皮肤站',
+        name: '燕山大学MC社皮肤站',
         link: 'http://skin.ysumc.club/',
       },
     ],
   },
 ]
-
 const externalLink = [
   {
     name: 'skin',
