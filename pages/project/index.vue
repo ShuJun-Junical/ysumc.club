@@ -42,7 +42,7 @@ const project = [
     content: [
       {
         title: '《像素燕大：燕山大学复原计划》',
-        subtitle: '——三千一百万方块打造的虚拟校园。',
+        subtitle: '三千一百万方块打造的虚拟校园。',
         time: '2022.4-2022.12',
         state: 0,
         image: '/img/Project/Work-1.png',
@@ -60,7 +60,7 @@ const project = [
       },
       {
         title: '《云游燕大》学校导览系统',
-        subtitle: '——游戏中的燕大魅力丝毫不减。',
+        subtitle: '游戏中的燕大魅力丝毫不减。',
         time: '',
         state: 1,
         image: '/img/Project/Work-2.png',
@@ -68,7 +68,7 @@ const project = [
       },
       {
         title: '《定格之中》虚拟校史馆',
-        subtitle: '——走进照片，回首百年。',
+        subtitle: '走进照片，回首百年。',
         time: '',
         state: 2,
         image: '/img/Project/WIP.png',
@@ -82,7 +82,7 @@ const project = [
     content: [
       {
         title: '时空悖论 ：劫后启示录',
-        subtitle: '——在逆境中重燃希望。',
+        subtitle: '在逆境中重燃希望。',
         time: '2023.1.6  已结束',
         state: 0,
         image: '/img/Project/Activity-1.png',
@@ -90,7 +90,7 @@ const project = [
       },
       {
         title: '玩家联谊会',
-        subtitle: '——每逢佳节便会到来的欢庆。',
+        subtitle: '每逢佳节便会到来的欢庆。',
         time: '节日期间举行',
         state: 0,
         image: '/img/Project/Activity-2.png',
@@ -98,7 +98,7 @@ const project = [
       },
       {
         title: '100分钟建筑赛',
-        subtitle: '——能力与智谋的较量。',
+        subtitle: '能力与智谋的较量。',
         time: '不定期举行',
         state: 0,
         image: '/img/Project/Activity-3.png',
@@ -112,7 +112,7 @@ const project = [
     content: [
       {
         title: '3D打印工作流',
-        subtitle: '——虚拟成真的纪念。',
+        subtitle: '虚拟成真的纪念。',
         time: '',
         state: 0,
         image: '/img/Project/Workflow-1.png',
@@ -120,7 +120,7 @@ const project = [
       },
       {
         title: '平面设计与视效工作流',
-        subtitle: '——让一切真实与生动。',
+        subtitle: '让一切真实与生动。',
         time: '',
         state: 0,
         image: '/img/Project/Workflow-2.png',
@@ -128,7 +128,7 @@ const project = [
       },
       {
         title: '正式社员培训工作流',
-        subtitle: '——薪火相传的意义。',
+        subtitle: '薪火相传的意义。',
         time: '',
         state: 0,
         image: '/img/Project/Workflow-3.png',
@@ -142,7 +142,7 @@ const project = [
     content: [
       {
         title: '燕山大学服务器',
-        subtitle: '——为燕山大学Minecraft爱好者搭建起的平台。',
+        subtitle: '为燕山大学Minecraft爱好者搭建起的平台。',
         time: '',
         state: 0,
         image: '/img/Project/MCServer-1.png',
@@ -150,7 +150,7 @@ const project = [
       },
       {
         title: '《原初燕大服》',
-        subtitle: '——这个不堪一击的服务器是一切的原点。',
+        subtitle: '这个不堪一击的服务器是一切的原点。',
         time: '2022.2  已关闭',
         state: 0,
         image: '/img/Project/MCServer-2.png',
