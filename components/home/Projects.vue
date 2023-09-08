@@ -1,12 +1,12 @@
 <template>
-  <div class="max-w-7xl mb-14 mx-auto grid grid-cols-2 gap-8">
+  <div class="max-w-7xl mb-14 mx-6 lg:mx-auto grid grid-cols-2 gap-8">
     <HomeProjectCard
       v-for="i in list"
       :key="i.title"
       :title="i.title"
       :image="i.image"
       :link="i.link"
-      class="col-span-1"
+      class="col-span-2 md:col-span-1"
       >{{ i.text }}</HomeProjectCard
     >
   </div>

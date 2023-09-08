@@ -1,7 +1,7 @@
 <template>
   <PublicHero image="/img/Project/Hero.png" dark="0.6">
     <div class="absolute top-1/3 w-full">
-      <h1 class="text-7xl font-ysumc text-white text-center">
+      <h1 class="text-4xl md:text-7xl font-ysumc text-white text-center">
         距离下一次危机还有
       </h1>
       <PublicCountdown :time="new Date('2024/2/10')"
@@ -24,11 +24,12 @@
       :state="j.state"
       :image="j.image"
       :link="j.link"
-      class="max-w-7xl mx-auto my-8"
+      :dark="j.dark || false"
+      class="max-w-7xl mx-6 md:mx-auto my-8"
     />
   </div>
   <PublicCountdown
-    :time="new Date('2023/9.13')"
+    :time="new Date('2023/9/13')"
     title="有人要过生日了。"
     image="/img/Project/Activity-2.png"
   ></PublicCountdown>
@@ -46,14 +47,7 @@ const project = [
         state: 0,
         image: '/img/Project/Work-1.png',
         link: '/project/work/pixel-ysu',
-      },
-      {
-        title: '《云游燕大》学校导览系统',
-        subtitle: '——游戏中的燕大魅力丝毫不减。',
-        time: '',
-        state: 1,
-        image: '/img/Project/Work-2.png',
-        link: '/project/work/online-ysu',
+        dark: true,
       },
       {
         title: '一个大工程',
@@ -62,6 +56,15 @@ const project = [
         state: 1,
         image: '/img/Project/WIP.png',
         link: '/project/work-in-progress',
+        dark: true,
+      },
+      {
+        title: '《云游燕大》学校导览系统',
+        subtitle: '——游戏中的燕大魅力丝毫不减。',
+        time: '',
+        state: 1,
+        image: '/img/Project/Work-2.png',
+        link: '/project/work/online-ysu',
       },
       {
         title: '《定格之中》虚拟校史馆',
@@ -116,7 +119,7 @@ const project = [
         link: '/project/workflow/3d-print',
       },
       {
-        title: '视效工作流',
+        title: '平面设计与视效工作流',
         subtitle: '——让一切真实与生动。',
         time: '',
         state: 0,

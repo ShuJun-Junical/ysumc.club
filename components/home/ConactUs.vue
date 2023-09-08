@@ -1,11 +1,13 @@
 <template>
   <div class="w-full bg-neutral-50 pb-14">
-    <div class="max-w-7xl mx-auto flex items-center">
-      <p class="mr-auto text-xl leading-normal font-normal">
+    <div class="max-w-7xl mx-6 lg:mx-auto md:flex md:items-center">
+      <p
+        class="mr-auto text-md md:text-xl leading-normal font-normal text-center md:text-left"
+      >
         您可以前往QQ群与我们交流，进入我们的bilibili页面了解更多……<br />
         或在皮肤站注册一个账号，直接开玩！
       </p>
-      <div class="flex ml-auto gap-4">
+      <div class="flex ml-auto gap-4 justify-center mt-4 md:mt-0">
         <a
           v-for="i in link"
           class="w-14 h-14 rounded-full flex items-center justify-center border-2 border-[#817f7f]"

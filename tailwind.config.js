@@ -14,6 +14,7 @@ module.exports = {
       // current: 'currentColor',
       white: '#ffffff',
       'base-white': '#f1f1f1',
+      black: '#3b3b3b',
       gray: '#777777',
       'gray-dark': '#5e5e5e',
       gray4: '#666666',

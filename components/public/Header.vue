@@ -1,7 +1,7 @@
 <template>
   <header class="fixed w-full z-30 backdrop-blur-lg shadow-lg">
     <div
-      class="mx-10 flex items-center justify-between transition-all duration-300 ease-in-out h-10"
+      class="mx-3 md:mx-10 flex items-center justify-between transition-all duration-300 ease-in-out h-10"
     >
       <!-- Site branding -->
       <NuxtLink
@@ -14,7 +14,7 @@
           class="transition-all duration-300 ease-in-out h-6"
           fit="contain"
         />
-        <span class="text-white text-md pl-3 font-ysumc"
+        <span class="text-white text-md pl-3 font-ysumc hidden md:inline"
           >燕山大学Minecraft学生同好者协会</span
         >
       </NuxtLink>
@@ -66,7 +66,7 @@
         >
           <span class="sr-only">Menu</span>
           <svg
-            class="w-6 h-6 fill-current text-gray-900"
+            class="w-6 h-6 fill-current text-white"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -176,7 +176,7 @@ function keyHandler(e: any) {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .nav-button:hover > .dropdown-menu {
   display: block;
 }

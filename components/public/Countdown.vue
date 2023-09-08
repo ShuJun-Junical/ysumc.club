@@ -1,25 +1,21 @@
 <template>
-  <div class="w-full py-14" :class="{ jarallax: props.image }">
+  <div class="w-full" :class="props.image ? 'jarallax py-14' : 'py-0'">
     <NuxtImg
       :src="props.image"
       class="jarallax-img brightness-50"
       v-if="props.image"
     />
     <div class="text-center text-white max-w-4xl mx-auto">
-      <h1 class="text-5xl font-ysumc" v-if="props.title">
+      <h1 class="text-2xl md:text-5xl font-ysumc" v-if="props.title">
         {{ props.title }}
       </h1>
       <div class="flex items-end mt-14 mb-8">
-        <div
-          class="text-6xl w-1/4"
-          v-for="(i, index) in countDown"
-          :key="index"
-        >
-          <span class="font-ysumc">{{ i }}</span>
-          <p class="text-2xl">{{ units[index] }}</p>
+        <div class="w-1/4" v-for="(i, index) in countDown" :key="index">
+          <span class="text-4xl md:text-6xl font-ysumc">{{ i }}</span>
+          <p class="text-xl md:text-2xl">{{ units[index] }}</p>
         </div>
       </div>
-      <div class="text-xl text-white text-center">
+      <div class="text-sm md:text-xl text-white text-center">
         <slot />
       </div>
     </div>

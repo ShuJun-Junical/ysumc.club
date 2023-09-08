@@ -1,11 +1,11 @@
 <template>
-  <div class="rounded-md overflow-hidden bg-white flex flex-col">
+  <div class="shadow-lg overflow-hidden bg-white flex flex-col">
     <NuxtImg :src="props.image" class="w-full aspect-video object-cover" />
     <div class="pt-8 px-8">
       <h2 class="text-xl leading-normal text-center">
         <strong>{{ props.title }}</strong>
       </h2>
-      <p class="text-lg mb-8 mt-4 leading-normal indent-9">
+      <p class="text-md md:text-lg mb-8 mt-4 leading-normal indent-9">
         <slot />
       </p>
     </div>

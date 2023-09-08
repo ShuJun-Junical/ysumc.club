@@ -34,5 +34,11 @@ const colorList = {
     'hover:text-gray-dark',
     'hover:border-gray-dark',
   ],
+  white: [
+    'text-white',
+    'border-white',
+    'hover:text-base-white',
+    'hover:border-base-white',
+  ],
 }
 </script>
