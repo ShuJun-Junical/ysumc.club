@@ -1,10 +1,7 @@
 <template>
-  <header
-    class="fixed w-full z-30 bg-neutral-400/40 backdrop-blur-sm shadow-lg"
-  >
+  <header class="fixed w-full z-30 backdrop-blur-lg shadow-lg">
     <div
-      class="mx-10 flex items-center justify-between transition-all duration-300 ease-in-out"
-      :class="`${top ? 'h-20' : 'h-16'}`"
+      class="mx-10 flex items-center justify-between transition-all duration-300 ease-in-out h-10"
     >
       <!-- Site branding -->
       <NuxtLink
@@ -14,11 +11,10 @@
       >
         <NuxtImg
           src="/img/logo/ysumc-white.svg"
-          class="transition-all duration-300 ease-in-out"
-          :class="`${top ? 'h-12' : 'h-10'}`"
+          class="transition-all duration-300 ease-in-out h-6"
           fit="contain"
         />
-        <span class="text-white font-bold text-xl pl-3 font-ysumc"
+        <span class="text-white text-md pl-3 font-ysumc"
           >燕山大学Minecraft学生同好者协会</span
         >
       </NuxtLink>
@@ -30,8 +26,8 @@
           <li v-for="i in NavBarList" :key="i.name" class="nav-button">
             <NuxtLink
               :to="i.isMenu ? '' : i.link"
-              :target="isOutLink(i.link) ? '_blank' : ''"
-              class="text-lg font-medium text-white hover:text-gray-300 px-3 lg:px-5 py-2 flex items-center transition ease-in-out"
+              :target="$isOutlink(i.link) ? '_blank' : ''"
+              class="text-md font-medium text-white hover:text-gray-300 px-3 lg:px-5 py-2 flex items-center transition ease-in-out"
             >
               {{ i.name }}{{ i.isMenu ? ' ▾' : '' }}
             </NuxtLink>
@@ -43,7 +39,7 @@
                 v-for="j in i.contents"
                 :key="j.name"
                 :to="j.link"
-                :target="isOutLink(j.link) ? '_blank' : ''"
+                :target="$isOutlink(j.link) ? '_blank' : ''"
                 class="text-lg font-base text-white hover:text-gray-300 px-6 py-3 flex items-center transition ease-in-out"
                 :class="
                   i.contents?.indexOf(j) === i.contents?.length - 1
@@ -119,6 +115,7 @@
 <script setup lang="ts">
 const top = ref(true)
 const mobileNavOpen = ref(false)
+const { $isOutlink } = useNuxtApp()
 
 const NavBarList = [
   {
@@ -176,12 +173,6 @@ function keyHandler(e: any) {
   if (e.keyCode === 27) {
     mobileNavOpen.value = false
   }
-}
-
-function isOutLink(link: string | undefined) {
-  // 使用正则表达式判断是否为外链
-  const reg = /^http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?$/
-  return link ? reg.test(link) : false
 }
 </script>
 

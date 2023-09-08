@@ -9,11 +9,11 @@
         <slot />
       </p>
     </div>
-    <NuxtLink
-      :to="props.link"
-      class="bg-cyan-500 hover:bg-cyan-600 transition-colors py-3 px-6 text-white rounded text-center text-lg shadow-md self-start mt-auto mb-8 ml-8"
-      >详细信息 ></NuxtLink
-    >
+    <PublicButton
+      text="详细信息"
+      :link="props.link"
+      class="self-start mt-auto mb-8 ml-8"
+    />
   </div>
 </template>
 <script setup lang="ts">

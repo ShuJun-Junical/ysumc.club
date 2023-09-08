@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen overflow-hidden">
+  <div class="flex flex-col min-h-screen overflow-hidden bg-base-white">
     <PublicHeader />
 
     <!-- Toast 顶部提示 -->

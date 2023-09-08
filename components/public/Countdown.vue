@@ -11,15 +11,15 @@
       </h1>
       <div class="flex items-end mt-14 mb-8">
         <div
-          class="text-6xl font-ysumc w-1/4"
+          class="text-6xl w-1/4"
           v-for="(i, index) in countDown"
           :key="index"
         >
-          {{ i }}
+          <span class="font-ysumc">{{ i }}</span>
           <p class="text-2xl">{{ units[index] }}</p>
         </div>
       </div>
-      <div class="text-xl font-ysumc text-white text-center">
+      <div class="text-xl text-white text-center">
         <slot />
       </div>
     </div>
