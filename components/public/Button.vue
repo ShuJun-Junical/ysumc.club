@@ -1,12 +1,19 @@
 <template>
-  <NuxtLink :to="props.link" :target="$isOutlink(props.link) ? '_blank' : ''">
+  <NuxtLink
+    :to="props.link"
+    :target="$isOutlink(props.link) ? '_blank' : ''"
+    :class="$attrs.class"
+  >
     <button
       class="transition-colors py-2 px-4 rounded-md text-center text-lg border-[2.5px] font-bold tracking-tight"
       :class="color ? colorList[color] : colorList.blue"
+      :style="color === 'gray' ? 'cursor:default' : ''"
+      @click="color === 'gray' ? (原神启动 = true) : ''"
     >
       {{ props.text }}
     </button>
   </NuxtLink>
+  <EggGenshin v-if="color === 'gray' && 原神启动" @click="原神启动 = false" />
 </template>
 <script setup lang="ts">
 const $isOutlink = inject('isOutlink')
@@ -28,12 +35,7 @@ const colorList = {
     'hover:text-pink-dark',
     'hover:border-pink-dark',
   ],
-  gray: [
-    'text-gray',
-    'border-gray',
-    'hover:text-gray-dark',
-    'hover:border-gray-dark',
-  ],
+  gray: ['text-gray', 'border-gray'],
   white: [
     'text-white',
     'border-white',
@@ -41,4 +43,6 @@ const colorList = {
     'hover:border-base-white',
   ],
 }
+
+const 原神启动 = ref(false)
 </script>

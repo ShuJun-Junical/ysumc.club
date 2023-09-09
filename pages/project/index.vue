@@ -72,7 +72,7 @@ const project = [
         time: '',
         state: 2,
         image: '/img/Project/WIP.png',
-        link: '/egg/genshin',
+        link: '',
       },
     ],
   },

@@ -21,6 +21,7 @@
   "dependencies": {
     "@nuxt/image": "1.0.0-rc.1",
     "aos": "^2.3.4",
+    "han-css": "^3.3.0",
     "jarallax": "^2.1.4"
   }
 }
