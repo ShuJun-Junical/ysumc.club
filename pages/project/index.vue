@@ -1,5 +1,5 @@
 <template>
-  <PublicHero image="/img/Project/Hero.png" dark="0.6">
+  <PublicHero image="Project/Hero.png" dark="0.6">
     <div class="absolute top-1/3 w-full">
       <h1 class="text-4xl md:text-7xl font-ysumc text-white text-center">
         距离下一次危机还有
@@ -31,7 +31,7 @@
   <PublicCountdown
     :time="new Date('2023/9/13')"
     title="有人要过生日了。"
-    image="/img/Project/Activity-2.png"
+    image="Project/Activity-2.png"
   ></PublicCountdown>
 </template>
 <script setup lang="ts">
@@ -45,7 +45,7 @@ const project = [
         subtitle: '三千一百万方块打造的虚拟校园。',
         time: '2022.4-2022.12',
         state: 0,
-        image: '/img/Project/Work-1.png',
+        image: 'Project/Work-1.png',
         link: '/project/work/pixel-ysu',
         dark: true,
       },
@@ -54,7 +54,7 @@ const project = [
         subtitle: '',
         time: '预计于2024.1完成',
         state: 1,
-        image: '/img/Project/WIP.png',
+        image: 'Project/WIP.png',
         link: '/project/work-in-progress',
         dark: true,
       },
@@ -63,7 +63,7 @@ const project = [
         subtitle: '游戏中的燕大魅力丝毫不减。',
         time: '',
         state: 1,
-        image: '/img/Project/Work-2.png',
+        image: 'Project/Work-2.png',
         link: '/project/work/online-ysu',
       },
       {
@@ -71,7 +71,7 @@ const project = [
         subtitle: '走进照片，回首百年。',
         time: '',
         state: 2,
-        image: '/img/Project/WIP.png',
+        image: 'Project/WIP.png',
         link: '',
       },
     ],
@@ -85,7 +85,7 @@ const project = [
         subtitle: '在逆境中重燃希望。',
         time: '2023.1.6  已结束',
         state: 0,
-        image: '/img/Project/Activity-1.png',
+        image: 'Project/Activity-1.png',
         link: '/project/activity/rpg-skbl-jhqsl',
       },
       {
@@ -93,7 +93,7 @@ const project = [
         subtitle: '每逢佳节便会到来的欢庆。',
         time: '节日期间举行',
         state: 0,
-        image: '/img/Project/Activity-2.png',
+        image: 'Project/Activity-2.png',
         link: '/project/activity/festival-party',
       },
       {
@@ -101,7 +101,7 @@ const project = [
         subtitle: '能力与智谋的较量。',
         time: '不定期举行',
         state: 0,
-        image: '/img/Project/Activity-3.png',
+        image: 'Project/Activity-3.png',
         link: '/project/activity/100min-construct',
       },
     ],
@@ -115,7 +115,7 @@ const project = [
         subtitle: '虚拟成真的纪念。',
         time: '',
         state: 0,
-        image: '/img/Project/Workflow-1.png',
+        image: 'Project/Workflow-1.png',
         link: '/project/workflow/3d-print',
       },
       {
@@ -123,7 +123,7 @@ const project = [
         subtitle: '让一切真实与生动。',
         time: '',
         state: 0,
-        image: '/img/Project/Workflow-2.png',
+        image: 'Project/Workflow-2.png',
         link: '/project/workflow/visual-effect',
       },
       {
@@ -131,7 +131,7 @@ const project = [
         subtitle: '薪火相传的意义。',
         time: '',
         state: 0,
-        image: '/img/Project/Workflow-3.png',
+        image: 'Project/Workflow-3.png',
         link: '/project/workflow/member-training',
       },
     ],
@@ -145,7 +145,7 @@ const project = [
         subtitle: '为燕山大学Minecraft爱好者搭建起的平台。',
         time: '',
         state: 0,
-        image: '/img/Project/MCServer-1.png',
+        image: 'Project/MCServer-1.png',
         link: '/project/mcserver/ysu-server',
       },
       {
@@ -153,7 +153,7 @@ const project = [
         subtitle: '这个不堪一击的服务器是一切的原点。',
         time: '2022.2  已关闭',
         state: 0,
-        image: '/img/Project/MCServer-2.png',
+        image: 'Project/MCServer-2.png',
         link: '/project/mcserver/old-server',
       },
     ],

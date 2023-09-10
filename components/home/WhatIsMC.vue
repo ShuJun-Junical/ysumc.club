@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="md:w-1/2 mt-8 md:mt-0">
-      <NuxtImg src="/img/Index/WhatIsMC.png"></NuxtImg>
+      <NuxtImg src="Index/WhatIsMC.png"></NuxtImg>
       <p class="text-sm text-gray text-right my-2">
         《流浪地球2》太空电梯 轿厢 复原（1:1）<br />秋田同学
         2023.3&nbsp;&nbsp;&nbsp;

@@ -38,4 +38,10 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.scss'],
   modules: ['@nuxt/image'],
+  ssr: true,
+  image: {
+    quality: 80,
+    format: ['avif', 'webp'],
+    dir: 'assets/image',
+  },
 })

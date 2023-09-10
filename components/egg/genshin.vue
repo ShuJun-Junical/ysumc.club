@@ -3,7 +3,7 @@
     class="genshin flex items-center justify-center fixed top-0 left-0"
     ref="white"
   >
-    <img src="/img/egg/o1.png" class="gi-img" ref="img" />
+    <img src="egg/o1.png" class="gi-img" ref="img" />
     <audio
       src="/audio/o.mp3"
       autoplay="autoplay"
@@ -30,7 +30,7 @@ onMounted(() => {
       setTimeout(() => {
         img.value.style.opacity = '0'
         setTimeout(() => {
-          img.value.src = '/img/egg/o2.png'
+          img.value.src = 'egg/o2.png'
           img.value.style.opacity = '1'
         }, 2000)
       }, 2000)

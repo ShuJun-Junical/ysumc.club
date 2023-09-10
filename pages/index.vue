@@ -1,8 +1,8 @@
 <template>
-  <PublicHero image="/img/Index/Hero.png" class="mb-14">
+  <PublicHero image="Index/Hero.png" class="mb-14">
     <div class="absolute bottom-36 md:top-[23%] left-4 md:left-8">
       <div class="w-full">
-        <NuxtImg src="/img/logo/ysumc-text.svg" class="h-20 md:h-32" />
+        <NuxtImg src="logo/ysumc-text.svg" class="h-20 md:h-32" />
       </div>
       <div
         class="mt-6 md:mt-16 ml-3 text-[3.2rem] md:text-[5.5rem] text-white font-normal leading-tight font-ysumc"
@@ -49,7 +49,7 @@
   <PublicCountdown
     :time="new Date('2024/2/10')"
     title="距离下一次惊艳大家还剩下："
-    image="/img/Index/Countdown.png"
+    image="Index/Countdown.png"
   >
     燕山大学MC社从来不缺惊喜。
   </PublicCountdown>

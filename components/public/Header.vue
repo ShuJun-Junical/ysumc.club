@@ -10,7 +10,7 @@
         aria-label="YSUMC"
       >
         <NuxtImg
-          src="/img/logo/ysumc-white.svg"
+          src="logo/ysumc-white.svg"
           class="transition-all duration-300 ease-in-out h-6"
           fit="contain"
         />
