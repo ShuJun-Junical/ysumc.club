@@ -15,11 +15,11 @@
   <div class="bg-neutral-50 py-1">
     <div v-for="i in position" :key="i.title" class="my-20">
       <h2 class="text-4xl text-center">
-        <strong>{{ i.title }}</strong>
+        <b>{{ i.title }}</b>
       </h2>
       <div v-if="i.hasChild" v-for="j in i.child">
         <h3 class="text-2xl text-center mt-10 mb-6">
-          <strong>{{ j.title }}</strong>
+          <b>{{ j.title }}</b>
         </h3>
         <JoinPositionCard :list="j.list" />
       </div>

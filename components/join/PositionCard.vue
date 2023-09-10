@@ -6,7 +6,7 @@
         class="block text-center text-7xl"
       ></span>
       <h4 class="text-center text-xl pt-8 pb-3">
-        <strong>{{ i.title }}</strong>
+        <b>{{ i.title }}</b>
       </h4>
       <p class="text-lg" v-html="i.text"></p>
     </div>

@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto flex items-center">
       <div class="mr-auto max-w-2xl">
         <div class="flex mb-4 items-center">
-          <h1 class="text-7xl"><strong>我们联合</strong></h1>
+          <h1 class="text-7xl"><b>我们联合</b></h1>
           <NuxtImg src="/img/logo/mua.svg" class="h-10 ml-auto"></NuxtImg>
         </div>
         <p class="text-xl leading-normal font-normal">
