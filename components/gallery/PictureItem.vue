@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-white py-16">
     <div class="lg:mx-10 items-center lg:flex lg:justify-start">
-      <NuxtImg :src="props.image" class="lg:w-2/3" />
+      <NuxtPicture :src="props.image" class="lg:w-2/3" />
       <div class="w-0 xl:w-[5%]" />
       <div class="mt-8 lg:mt-0 ml-8 xl:ml-0">
         <p class="text-3xl xl:text-4xl font-ysumc">{{ props.time }}</p>

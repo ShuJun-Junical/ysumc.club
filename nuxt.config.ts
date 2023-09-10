@@ -40,8 +40,8 @@ export default defineNuxtConfig({
   modules: ['@nuxt/image'],
   ssr: true,
   image: {
-    quality: 80,
-    format: ['avif', 'webp'],
+    quality: 85,
+    format: ['avif', 'webp', 'jpg'],
     dir: 'assets/image',
   },
 })

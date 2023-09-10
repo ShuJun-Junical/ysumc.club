@@ -3,19 +3,21 @@
     class="genshin flex items-center justify-center fixed top-0 left-0"
     ref="white"
   >
-    <img src="egg/o1.png" class="gi-img" ref="img" />
-    <audio
-      src="/audio/o.mp3"
-      autoplay="autoplay"
-      controls="controls"
-      ref="audio"
-    ></audio>
+    <NuxtPicture
+      :src="img.src"
+      class="gi-img"
+      :style="`opacity: ${img.opacity}`"
+    />
+    <audio src="/audio/o.mp3" autoplay="autoplay" ref="audio"></audio>
   </div>
 </template>
 <script setup lang="ts">
 import { on } from 'events'
 const white = ref()
-const img = ref()
+const img = ref({
+  src: 'egg/o1.png',
+  opacity: 0,
+})
 const audio = ref()
 
 definePageMeta({
@@ -26,12 +28,12 @@ onMounted(() => {
     white.value.style.opacity = '1'
     audio.value.play()
     setTimeout(() => {
-      img.value.style.opacity = '1'
+      img.value.opacity = 1
       setTimeout(() => {
-        img.value.style.opacity = '0'
+        img.value.opacity = 0
         setTimeout(() => {
           img.value.src = 'egg/o2.png'
-          img.value.style.opacity = '1'
+          img.value.opacity = 1
         }, 2000)
       }, 2000)
     }, 1500)
@@ -48,7 +50,6 @@ onMounted(() => {
   z-index: 1000;
 }
 .gi-img {
-  opacity: 0;
   transition: opacity 2s;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="w-full relative overflow-hidden">
     <div class="relative h-screen jarallax flex items-center justify-center">
-      <NuxtImg
+      <NuxtPicture
         :src="props.image"
         class="absolute m-auto inset-0 -z-10 jarallax-img"
         :class="props.dark ? `brightness-[${props.dark}]` : ''"

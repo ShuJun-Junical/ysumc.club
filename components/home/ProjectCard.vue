@@ -1,6 +1,6 @@
 <template>
   <div class="shadow-lg overflow-hidden bg-white flex flex-col">
-    <NuxtImg :src="props.image" class="w-full aspect-video object-cover" />
+    <NuxtPicture :src="props.image" class="w-full aspect-video object-cover" />
     <div class="pt-8 px-8">
       <h2 class="text-xl leading-normal text-center">
         <b>{{ props.title }}</b>

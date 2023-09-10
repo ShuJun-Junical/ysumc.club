@@ -1,6 +1,6 @@
 <template>
   <div class="w-full" :class="props.image ? 'jarallax py-14' : 'py-0'">
-    <NuxtImg
+    <NuxtPicture
       :src="props.image"
       class="jarallax-img brightness-50"
       v-if="props.image"

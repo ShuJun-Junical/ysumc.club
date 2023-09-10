@@ -3,7 +3,7 @@
     class="md:flex md:items-center p-2 md:py-16 md:px-10 shadow-lg"
     :class="dark ? 'bg-black' : 'bg-white'"
   >
-    <NuxtImg :src="props.image" class="aspect-videoml-auto md:hidden" />
+    <NuxtPicture :src="props.image" class="aspect-videoml-auto md:hidden" />
     <div class="pb-12 md:pb-0 pl-2 md:pl-0" :class="{ 'text-white': dark }">
       <h2
         class="text-[1.4rem] md:text-3xl pb-2 leading-normal font-ysumc mt-6"
@@ -17,7 +17,7 @@
         :link="props.link"
       />
     </div>
-    <NuxtImg
+    <NuxtPicture
       :src="props.image"
       class="aspect-video w-1/2 ml-auto hidden md:inline-block"
     />
