@@ -6,9 +6,9 @@
 WebSite
 |
 |-✓index: index.html
-|-join
-| |-external-member: 外部成员.html
-| |-full-member: 正式社员.html
+|-✓join
+| |-✓external-member: 外部成员.html
+| |-✓full-member: 正式社员.html
 |
 |-project
 | |-✓index: 项目页.html
@@ -31,7 +31,7 @@ WebSite
 | |-ysu-server: 服务器.html
 | |-old-server: 原初服.html
 |
-|-gallery: 画廊.html
+|-✓gallery: 画廊.html
 |-document
 | |-index: 资料.html
 | |-visual-identity: 视觉识别规范.html
