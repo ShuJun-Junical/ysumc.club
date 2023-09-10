@@ -12,6 +12,36 @@ $aos-distance: 10px;
 // Mobirise Icons
 @import '../external/mobirise-icons2/mobirise2.css';
 
+// Heti Add-on
+heti-spacing {
+  display: inline;
+
+  & + sup,
+  & + sub {
+    margin-inline-start: 0;
+  }
+}
+
+.heti-spacing-start {
+  margin-inline-end: 0.25em;
+}
+
+.heti-spacing-end {
+  margin-inline-start: 0.25em;
+}
+
+heti-adjacent {
+  display: inline;
+}
+
+.heti-adjacent-half {
+  margin-inline-end: -0.5em;
+}
+
+.heti-adjacent-quarter {
+  margin-inline-end: -0.25em;
+}
+
 @font-face {
   font-family: 'YSUMC';
   font-weight: 400;

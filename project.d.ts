@@ -9,3 +9,4 @@ declare module '*.tiff'
 declare module '*.webp'
 
 declare module 'aos'
+declare module 'han-css'

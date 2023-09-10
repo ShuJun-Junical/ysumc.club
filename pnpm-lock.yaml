@@ -11,9 +11,9 @@ dependencies:
   aos:
     specifier: ^2.3.4
     version: 2.3.4
-  han-css:
-    specifier: ^3.3.0
-    version: 3.3.0
+  heti-findandreplacedomtext:
+    specifier: ^0.5.0
+    version: 0.5.0
   jarallax:
     specifier: ^2.1.4
     version: 2.1.4
@@ -3086,12 +3086,6 @@ packages:
       web-streams-polyfill: 3.2.1
     dev: true
 
-  /fibre.js@0.2.1:
-    resolution: {integrity: sha512-2zN+IUGcEu66QD9uSOMn+Gx55BJh1ywHmt1afsox/GIO7SR2P+A7DKEW6hj5INvUmapVp07rtHyAlXggsydVOQ==}
-    dependencies:
-      findandreplacedomtext: 0.4.6
-    dev: false
-
   /file-uri-to-path@1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
     dev: true
@@ -3101,10 +3095,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       to-regex-range: 5.0.1
-
-  /findandreplacedomtext@0.4.6:
-    resolution: {integrity: sha512-CVRIKbEwfWoKTSnLrmyX26WjMY7o0aUUTm0RXN47fF/eHINJa8C+YHZxGagC7gMWVaAEBFwH7uVXuhwZcylWOQ==}
-    dev: false
 
   /flat@5.0.2:
     resolution: {integrity: sha512-b6suED+5/3rTpUBdG1gupIl8MPFCAMA0QXwmljLhvCUKcUvdE4gWky9zpuGCcXHOsz4J9wPGNWq6OKpmIzz3hQ==}
@@ -3416,14 +3406,6 @@ packages:
       uncrypto: 0.1.3
       unenv: 1.7.4
 
-  /han-css@3.3.0:
-    resolution: {integrity: sha512-WX26OBbtsvDIlFK9c62Kxntu2DI45Vx7xZg9ekf1GHsdRmFjVPyZaVx8Ul4qJuXqysmNPMoQItFjNJcVLZm30w==}
-    engines: {node: 0.12.x}
-    dependencies:
-      fibre.js: 0.2.1
-      normalize.css: 4.2.0
-    dev: false
-
   /has-flag@3.0.0:
     resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==}
     engines: {node: '>=4'}
@@ -3469,6 +3451,10 @@ packages:
 
   /hash-sum@2.0.0:
     resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
+
+  /heti-findandreplacedomtext@0.5.0:
+    resolution: {integrity: sha512-GFZjqU8LAdu1uR72GqrReI+lzNLMlcWtvdz1TKNJiofyo1mfTecFYSZEoEbcLcRMl+KwEldnNQoS4BwO8wtg0A==}
+    dev: false
 
   /hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
@@ -4550,10 +4536,6 @@ packages:
     resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
     engines: {node: '>=0.10.0'}
     dev: true
-
-  /normalize.css@4.2.0:
-    resolution: {integrity: sha512-6vowjfebV3sEudR9vL2p3NQY3CliFBcM0LWr/S97RNosTmu63HQhcggCOtGjQQmtJuCwIABPEYqtItp2PlwTsg==}
-    dev: false
 
   /npm-bundled@3.0.0:
     resolution: {integrity: sha512-Vq0eyEQy+elFpzsKjMss9kxqb9tG3YHg4dsyWuUENuzvSUWe1TCnW/vV9FkhvBk/brEDoDiVd+M1Btosa6ImdQ==}

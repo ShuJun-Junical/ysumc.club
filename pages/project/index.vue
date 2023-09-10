@@ -25,7 +25,7 @@
       :image="j.image"
       :link="j.link"
       :dark="j.dark || false"
-      class="max-w-7xl mx-6 lg:mx-auto my-8"
+      class="max-w-7xl mx-6 xl:mx-auto my-8"
     />
   </div>
   <PublicCountdown

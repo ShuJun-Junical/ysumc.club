@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mb-14 mx-6 lg:mx-auto grid grid-cols-2 gap-8">
+  <div class="max-w-7xl mb-14 mx-6 xl:mx-auto grid grid-cols-2 gap-8">
     <HomeProjectCard
       v-for="i in list"
       :key="i.title"

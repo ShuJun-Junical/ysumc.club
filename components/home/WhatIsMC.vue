@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-7xl px-6 lg:px-0 mt-20 md:mt-0 mb-14 mx-auto md:flex md:gap-10 lg:gap-16 items-center"
+    class="max-w-7xl px-6 xl:px-0 mt-20 md:mt-0 mb-14 mx-auto md:flex md:gap-10 xl:gap-16 items-center"
   >
     <div class="md:w-1/2">
       <h1 class="text-3xl md:text-4xl mb-4 font-ysumc">Minecraft是什么？</h1>

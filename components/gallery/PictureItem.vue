@@ -1,12 +1,15 @@
 <template>
   <div class="w-full bg-white py-16">
-    <div class="grid grid-cols-12 max-w-7xl mx-auto items-center">
-      <NuxtImg :src="props.image" class="col-span-7" />
-      <div class="col-span-4 col-start-9">
-        <p class="text-4xl font-ysumc">{{ props.time }}</p>
-        <h1 class="text-3xl font-ysumc pt-4">{{ props.title }}</h1>
-        <div class="text-lg mt-12 mb-6"><slot /></div>
-        <div class="flex">
+    <div class="lg:mx-10 items-center lg:flex lg:justify-start">
+      <NuxtImg :src="props.image" class="lg:w-2/3" />
+      <div class="w-0 xl:w-[5%]" />
+      <div class="mt-8 lg:mt-0 ml-8 xl:ml-0">
+        <p class="text-3xl xl:text-4xl font-ysumc">{{ props.time }}</p>
+        <h1 class="text-2xl xl:text-3xl font-ysumc pt-4 -ml-2">
+          {{ props.title }}
+        </h1>
+        <div class="text-md xl:text-lg mt-12 mb-6" v-html="props.text"></div>
+        <div class="flex gap-4">
           <PublicButton
             v-for="i in props.buttons"
             :key="i.text"
@@ -24,6 +27,7 @@ const props = defineProps<{
   image: string
   title: string
   time: string
+  text: string
   buttons: {
     text: string
     color?: 'blue' | 'pink' | 'gray'

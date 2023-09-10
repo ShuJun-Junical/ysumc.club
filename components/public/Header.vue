@@ -27,7 +27,7 @@
             <NuxtLink
               :to="i.isMenu ? '' : i.link"
               :target="$isOutlink(i.link) ? '_blank' : ''"
-              class="text-md font-medium text-white hover:text-gray-300 px-3 lg:px-5 py-2 flex items-center transition ease-in-out"
+              class="text-md font-medium text-white hover:text-gray-300 px-3 xl:px-5 py-2 flex items-center transition ease-in-out"
             >
               {{ i.name }}{{ i.isMenu ? ' ▾' : '' }}
             </NuxtLink>

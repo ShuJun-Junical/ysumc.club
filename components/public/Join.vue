@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto text-center">
       <h1 class="text-3xl md:text-4xl font-ysumc">加入我们！</h1>
       <p class="text-md md:text-xl mt-3">我们不收取任何费用！</p>
-      <div class="md:flex md:gap-8 mt-8 mx-6 lg:mx-0">
+      <div class="md:flex md:gap-8 mt-8 mx-6 xl:mx-0">
         <div
           v-for="i in card"
           class="bg-white md:w-1/2 p-12 shadow-lg text-center my-4 md:my-0"
