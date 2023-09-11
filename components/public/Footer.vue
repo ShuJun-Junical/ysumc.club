@@ -8,7 +8,7 @@
         <!-- First block -->
         <div class="col-span-6 md:col-span-3 flex flex-col md:justify-between">
           <NuxtLink to="/" class="inline-block" aria-label="YSUMC">
-            <NuxtPicture src="logo/ysumc-text.svg" class="w-96" />
+            <NuxtImg src="logo/ysumc-text.svg" class="w-96" />
           </NuxtLink>
           <div class="flex md:gap-2 mt-4 md:mt-0">
             <a
