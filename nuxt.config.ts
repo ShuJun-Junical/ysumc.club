@@ -1,5 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import prerenderList from './prerenderList'
 export default defineNuxtConfig({
+  nitro: {
+    prerender: {
+      routes: prerenderList,
+    },
+  },
   app: {
     // pageTransition: true,
     // layoutTransition: true,

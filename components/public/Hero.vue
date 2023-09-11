@@ -33,6 +33,7 @@ onMounted(() => {
     $jarallax(document.querySelectorAll('.jarallax'), {
       speed: 0.6,
       videoSrc: props.image,
+      videoLazyLoading: false,
       // imgPosition: '50% 50%',
     })
     return

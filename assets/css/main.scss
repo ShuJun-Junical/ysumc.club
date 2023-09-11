@@ -15,7 +15,6 @@ $aos-distance: 10px;
 // Heti Add-on
 heti-spacing {
   display: inline;
-
   & + sup,
   & + sub {
     margin-inline-start: 0;
@@ -46,8 +45,8 @@ heti-adjacent {
   font-family: 'YSUMC';
   font-weight: 400;
   src:
-    url(../fonts/YSUMC_tandard_Minecraft_Font.ttf) format(truetype),
-    url(../fonts/YSUMC_tandard_Minecraft_Font.woff2) format(woff2);
+    url(../fonts/YSUMC_tandard_Minecraft_Font.woff2) format(woff2),
+    url(../fonts/YSUMC_tandard_Minecraft_Font.woff) format(woff);
   font-display: swap;
 }
 
