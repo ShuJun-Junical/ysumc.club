@@ -2,6 +2,7 @@
   <div class="w-full relative overflow-hidden">
     <div class="relative h-screen jarallax flex items-center justify-center">
       <NuxtPicture
+        v-if="!props.isVideo"
         :src="props.image"
         class="absolute m-auto inset-0 -z-10 jarallax-img"
         :class="props.dark ? `brightness-[${props.dark}]` : ''"
@@ -16,16 +17,26 @@
 </template>
 
 <script setup lang="ts">
-const { $jarallax } = useNuxtApp()
+const { $jarallax, $jarallaxVideo } = useNuxtApp()
 
 const props = defineProps<{
   image: string
   dark?: number | string
   title?: string
   text?: string
+  isVideo?: boolean
 }>()
 
 onMounted(() => {
+  if (props.isVideo) {
+    $jarallaxVideo()
+    $jarallax(document.querySelectorAll('.jarallax'), {
+      speed: 0.6,
+      videoSrc: props.image,
+      // imgPosition: '50% 50%',
+    })
+    return
+  }
   $jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.6,
     // imgPosition: '50% 50%',

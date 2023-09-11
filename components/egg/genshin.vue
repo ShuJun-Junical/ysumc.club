@@ -8,7 +8,7 @@
       class="gi-img"
       :style="`opacity: ${img.opacity}`"
     />
-    <audio src="/audio/o.mp3" autoplay="autoplay" ref="audio"></audio>
+    <audio src="/media/o.mp3" autoplay="autoplay" ref="audio"></audio>
   </div>
 </template>
 <script setup lang="ts">
