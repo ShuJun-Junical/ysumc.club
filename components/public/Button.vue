@@ -19,7 +19,7 @@
 const $isOutlink = inject('isOutlink')
 const props = defineProps<{
   text: string
-  color?: 'blue' | 'pink' | 'gray'
+  color?: 'blue' | 'pink' | 'gray' | 'black'
   link?: string
 }>()
 const colorList = {
@@ -41,6 +41,12 @@ const colorList = {
     'border-white',
     'hover:text-base-white',
     'hover:border-base-white',
+  ],
+  black: [
+    'text-black',
+    'border-black',
+    'hover:text-black-dark',
+    'hover:border-black-dark',
   ],
 }
 
