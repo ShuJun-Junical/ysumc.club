@@ -54,7 +54,7 @@ const props = defineProps<{
 
 if (props.image)
   onMounted(() => {
-    $jarallax(jarallaxitem, {
+    $jarallax(jarallaxitem.value, {
       speed: 0.6,
       // imgPosition: '50% 50%',
     })

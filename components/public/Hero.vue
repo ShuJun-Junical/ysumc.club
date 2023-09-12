@@ -34,7 +34,7 @@ const props = defineProps<{
 onMounted(() => {
   if (props.isVideo) {
     $jarallaxVideo()
-    $jarallax(jarallax, {
+    $jarallax(jarallax.value, {
       speed: 0.6,
       videoSrc: props.image,
       videoLazyLoading: false,
@@ -42,7 +42,7 @@ onMounted(() => {
     })
     return
   }
-  $jarallax(jarallax, {
+  $jarallax(jarallax.value, {
     speed: 0.6,
     // imgPosition: '50% 50%',
   })
