@@ -3,7 +3,7 @@
     <h1 class="text-3xl md:text-4xl mb-10 font-ysumc">
       {{ props.title }}
     </h1>
-    <p class="text-md md:text-lg"><slot></slot></p>
+    <p class="text-base md:text-lg"><slot></slot></p>
   </div>
 </template>
 <script setup lang="ts">

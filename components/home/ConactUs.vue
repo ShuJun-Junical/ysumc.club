@@ -2,7 +2,7 @@
   <div class="w-full bg-neutral-50 pb-14">
     <div class="max-w-7xl mx-6 xl:mx-auto md:flex md:items-center">
       <p
-        class="mr-auto text-md md:text-xl leading-normal font-normal text-center md:text-left"
+        class="mr-auto text-base md:text-xl leading-normal font-normal text-center md:text-left"
       >
         您可以前往QQ群与我们交流，进入我们的bilibili页面了解更多……<br />
         或在皮肤站注册一个账号，直接开玩！

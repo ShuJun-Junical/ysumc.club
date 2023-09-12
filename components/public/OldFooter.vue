@@ -48,7 +48,7 @@
         </div>
       </div>
     </div>
-    <div class="mt-4 w-full text-center text-md text-gray">
+    <div class="mt-4 w-full text-center text-base text-gray">
       “本社所有文案，图片均由燕山大学Minecraft学生同好者协会制作，未经允许，切勿盗取挪用，如若发现，将采取法律手段进行维权。”<br />
       <a href="https://beian.miit.gov.cn" target="_blank"
         >黔ICP备2022009898号-1</a

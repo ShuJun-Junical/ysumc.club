@@ -5,7 +5,7 @@
       <h2 class="text-xl leading-normal text-center">
         <b>{{ props.title }}</b>
       </h2>
-      <p class="text-md md:text-lg mb-8 mt-4 leading-normal indent-9">
+      <p class="text-base md:text-lg mb-8 mt-4 leading-normal indent-9">
         <slot />
       </p>
     </div>

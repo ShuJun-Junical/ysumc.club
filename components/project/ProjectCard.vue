@@ -9,8 +9,8 @@
         class="text-[1.4rem] md:text-3xl pb-2 leading-normal font-ysumc mt-6"
         v-html="props.title"
       ></h2>
-      <p class="text-md md:text-lg pt-2">{{ props.subtitle || ' ' }}</p>
-      <p class="text-md md:text-lg pb-12">{{ props.time || ' ' }}</p>
+      <p class="text-base md:text-lg pt-2">{{ props.subtitle || ' ' }}</p>
+      <p class="text-base md:text-lg pb-12">{{ props.time || ' ' }}</p>
       <PublicButton
         :text="['了解更多', 'WIP', '已写入计划'][props.state]"
         :color="dark ? 'white' : ['blue', 'pink', 'gray'][props.state]"

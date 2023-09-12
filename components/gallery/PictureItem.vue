@@ -8,7 +8,7 @@
         <h1 class="text-2xl xl:text-3xl font-ysumc pt-4 -ml-2">
           {{ props.title }}
         </h1>
-        <div class="text-md xl:text-lg mt-12 mb-6" v-html="props.text"></div>
+        <div class="text-base xl:text-lg mt-12 mb-6" v-html="props.text"></div>
         <div class="flex gap-4">
           <PublicButton
             v-for="i in props.buttons"
