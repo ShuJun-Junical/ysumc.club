@@ -97,6 +97,7 @@ const content = [
         name: '西安建筑科技大学',
         link: 'https://www.xauatcraft.com/',
       },
+      { name: '塔里木大学', link: 'https://www.tarucraft.club' },
     ],
   },
   {
