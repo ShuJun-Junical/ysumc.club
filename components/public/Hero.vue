@@ -1,6 +1,9 @@
 <template>
   <div class="w-full relative overflow-hidden">
-    <div class="relative h-screen jarallax flex items-center justify-center">
+    <div
+      class="relative h-screen jarallax flex items-center justify-center"
+      ref="jarallax"
+    >
       <NuxtPicture
         v-if="!props.isVideo"
         :src="props.image"
@@ -18,6 +21,7 @@
 
 <script setup lang="ts">
 const { $jarallax, $jarallaxVideo } = useNuxtApp()
+const jarallax = ref()
 
 const props = defineProps<{
   image: string
@@ -30,7 +34,7 @@ const props = defineProps<{
 onMounted(() => {
   if (props.isVideo) {
     $jarallaxVideo()
-    $jarallax(document.querySelectorAll('.jarallax'), {
+    $jarallax(jarallax, {
       speed: 0.6,
       videoSrc: props.image,
       videoLazyLoading: false,
@@ -38,7 +42,7 @@ onMounted(() => {
     })
     return
   }
-  $jarallax(document.querySelectorAll('.jarallax'), {
+  $jarallax(jarallax, {
     speed: 0.6,
     // imgPosition: '50% 50%',
   })

@@ -1,5 +1,9 @@
 <template>
-  <div class="w-full" :class="props.image ? 'jarallax py-14' : 'py-0'">
+  <div
+    class="w-full"
+    :class="props.image ? 'jarallax py-14' : 'py-0'"
+    ref="jarallaxitem"
+  >
     <NuxtPicture
       :src="props.image"
       class="jarallax-img brightness-50"
@@ -27,6 +31,7 @@ const { $jarallax } = useNuxtApp()
 const currentTime = ref(new Date())
 const countDown = ref(['00', '00', '00', '00'])
 let timer: any = null
+const jarallaxitem = ref(null)
 
 const units = ['天', '时', '分', '秒']
 
@@ -49,7 +54,7 @@ const props = defineProps<{
 
 if (props.image)
   onMounted(() => {
-    $jarallax(document.querySelectorAll('.jarallax'), {
+    $jarallax(jarallaxitem, {
       speed: 0.6,
       // imgPosition: '50% 50%',
     })

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen overflow-hidden bg-base-white heti">
+  <div class="flex flex-col min-h-screen overflow-hidden heti">
     <PublicHeader />
     <main class="grow">
       <PublicHero image="404.jpeg">
