@@ -14,7 +14,7 @@
           class="transition-all duration-300 ease-in-out h-6"
           fit="contain"
         />
-        <span class="text-white text-md pl-3 font-ysumc hidden md:inline"
+        <span class="text-white text-base pl-3 font-ysumc hidden md:inline"
           >燕山大学Minecraft学生同好者协会</span
         >
       </NuxtLink>
@@ -27,7 +27,7 @@
             <NuxtLink
               :to="i.isMenu ? '' : i.link"
               :target="$isOutlink(i.link) ? '_blank' : ''"
-              class="text-md font-medium text-white hover:text-gray-300 px-3 xl:px-5 py-2 flex items-center transition ease-in-out"
+              class="text-base font-medium text-white hover:text-gray-300 px-3 xl:px-5 py-2 flex items-center transition ease-in-out"
             >
               {{ i.name }}{{ i.isMenu ? ' ▾' : '' }}
             </NuxtLink>
@@ -56,17 +56,10 @@
 
       <!-- Mobile menu -->
       <div class="flex md:hidden">
-        <!-- Hamburger button -->
-        <button
-          ref="{trigger}"
-          :class="`hamburger ${mobileNavOpen ? 'active' : ''}`"
-          aria-controls="mobile-nav"
-          :aria-expanded="mobileNavOpen"
-          @click="mobileNavOpen = !mobileNavOpen"
-        >
+        <button @click="mobileNavOpen = !mobileNavOpen">
           <span class="sr-only">Menu</span>
           <svg
-            class="w-6 h-6 fill-current text-white"
+            class="w-6 h-6 fill-white"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -77,32 +70,49 @@
         </button>
 
         <!-- Mobile navigation -->
+        <div
+          class="bg-black/50 fixed left-0 top-0 w-screen h-screen z-10 transition-opacity duration-200 ease-in-out"
+          v-show="mobileNavOpen"
+        ></div>
 
         <Transition
           tag="nav"
           id="mobile-nav"
           enter-active-class="transition ease-out duration-200 transform"
-          enter-from-class="opacity-0 -translate-y-2"
-          enter-to-class="opacity-100 translate-y-0"
+          enter-from-class="opacity-0 translate-x-2"
+          enter-to-class="opacity-100 -translate-x-0"
           leave-active-class="transition ease-out duration-200"
           leave-from-class="opacity-100"
           leave-to-class="opacity-0"
         >
           <div
             v-show="mobileNavOpen"
-            class="absolute top-full h-screen pb-16 z-20 left-0 w-full overflow-scroll bg-white"
+            class="fixed right-0 top-0 h-screen z-20 w-1/2 overflow-scroll bg-base-white shadow-xl"
           >
-            <ul class="px-5 py-2">
+            <ul class="px-5 py-2" @click="mobileNavOpen = false">
               <!-- <li>
                   <h2 class="h2 flex text-gray-600 py-2">和瑛社</h2>
                 </li> -->
               <li v-for="i in NavBarList" :key="i.name">
                 <NuxtLink
-                  :to="i.path"
-                  class="flex text-gray-600 hover:text-gray-900 py-2"
+                  @click="mobileNavOpen = false"
+                  :to="i.link"
+                  :target="$isOutlink(i.link) ? '_blank' : ''"
+                  class="flex text-black hover:text-gray-900 py-2 hover:text-black-dark"
                 >
                   {{ i.name }}
                 </NuxtLink>
+                <ul v-if="i.isMenu" class="ml-3">
+                  <li v-for="j in i.contents">
+                    <NuxtLink
+                      @click="mobileNavOpen = false"
+                      :to="j.link"
+                      :target="$isOutlink(j.link) ? '_blank' : ''"
+                      class="flex text-gray hover:text-gray-900 py-2 hover:text-gray-dark text-sm"
+                      >{{ j.name }}</NuxtLink
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -116,6 +126,10 @@
 const top = ref(true)
 const mobileNavOpen = ref(false)
 const $isOutlink = inject('isOutlink')
+const router = useRouter()
+router.beforeEach((to, from) =>
+  mobileNavOpen.value ? (mobileNavOpen.value = false) : true,
+)
 
 const NavBarList = [
   {
