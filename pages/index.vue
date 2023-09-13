@@ -89,7 +89,7 @@ const projectList = [
   {
     title: '直冲云霄。',
     text: '起初没有人在意这场计划，直到这个计划显现出恐怖的规模。<br />固体方块数达12亿，从整体到每个细节均无可挑剔，前无古人，后难见来者。<br /><br />预计2024.8完工',
-    image: 'FirstAnni/SpaceElev.webp',
+    image: 'FirstAnni/SEV.png',
     link: '',
   },
   {

@@ -4,7 +4,7 @@
     <NuxtPicture
       v-if="props.additionalImage"
       :src="props.additionalImage"
-      class="block w-40 mt-4"
+      class="block w-32 mt-4"
       fit="inside"
     />
     <p
