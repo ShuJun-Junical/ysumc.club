@@ -1,5 +1,5 @@
 <template>
-  <div class="py-16 pl-10 w-full">
+  <div class="py-16 px-6 md:px-10 w-full">
     <h1 class="text-3xl md:text-5xl font-ysumc">{{ props.title }}</h1>
     <NuxtPicture
       v-if="props.additionalImage"
