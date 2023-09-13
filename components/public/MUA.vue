@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-white py-14">
+  <div class="w-full py-14" :class="dark ? 'bg-gray4' : 'bg-white'">
     <div class="max-w-7xl mx-auto flex items-center">
       <div class="mr-auto max-w-2xl">
         <div class="flex mb-4 items-center">
@@ -13,14 +13,14 @@
       <div class="flex ml-auto gap-4">
         <a
           v-for="i in link"
-          class="w-14 h-14 rounded-full flex items-center justify-center border-2 border-[#f0008a]"
+          class="w-14 h-14 rounded-full flex items-center justify-center border-2"
+          :class="[dark ? 'border-white' : 'border-pink']"
           :href="i.link"
           target="_blank"
         >
           <span
-            :class="i.icon"
+            :class="[dark ? 'text-white' : 'text-pink', i.icon]"
             class="text-3xl"
-            style="color: rgb(240, 0, 138); fill: rgb(240, 0, 138)"
           ></span>
         </a>
       </div>
@@ -29,6 +29,9 @@
 </template>
 
 <script setup lang="ts">
+const props = defineProps<{
+  dark?: boolean
+}>()
 const link = [
   {
     name: 'website',

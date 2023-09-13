@@ -1,25 +1,37 @@
 <template>
-  <div class="w-full py-14 bg-base-white">
+  <div class="w-full py-14">
     <div class="max-w-7xl mx-auto text-center">
       <h1 class="text-3xl md:text-4xl font-ysumc">加入我们！</h1>
       <p class="text-base md:text-xl mt-3">我们不收取任何费用！</p>
       <div class="md:flex md:gap-8 mt-8 mx-6 xl:mx-0">
         <div
           v-for="i in card"
-          class="bg-white md:w-1/2 p-12 shadow-lg text-center my-4 md:my-0"
+          class="md:w-1/2 p-12 shadow-lg text-center my-4 md:my-0"
+          :class="dark ? 'bg-gray' : 'bg-white'"
         >
-          <span :class="i.icon" class="text-7xl text-gray4"></span>
+          <span
+            class="text-7xl"
+            :class="[dark ? 'text-white' : 'text-gray4', i.icon]"
+          ></span>
           <h2 class="mt-10 text-3xl md:text-4xl font-ysumc">
             {{ i.name }}
           </h2>
           <p class="my-4 text-base md:text-lg" v-html="i.text"></p>
-          <PublicButton text="了解更多" :link="i.link" />
+          <PublicButton
+            text="了解更多"
+            :link="i.link"
+            :color="dark ? 'white' : 'blue'"
+          />
         </div>
       </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
+const props = defineProps<{
+  dark?: boolean
+}>()
+
 const card = [
   {
     name: '外部成员',

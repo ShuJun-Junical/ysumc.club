@@ -5,8 +5,8 @@
       ref="jarallax"
     >
       <NuxtPicture
-        v-if="!props.isVideo"
-        :src="props.image"
+        v-if="!props.isVideo || props.backupImg"
+        :src="props.isVideo ? props.backupImg : props.image"
         class="absolute m-auto inset-0 -z-10 jarallax-img"
         :class="props.dark ? `brightness-[${props.dark}]` : ''"
       />
@@ -29,6 +29,7 @@ const props = defineProps<{
   title?: string
   text?: string
   isVideo?: boolean
+  backupImg?: string
 }>()
 
 onMounted(() => {
