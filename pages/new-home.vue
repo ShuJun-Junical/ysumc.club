@@ -40,6 +40,7 @@
       :title="i.title"
       :button="{ link: i.link }"
       :text="i.text"
+      :additional-image="i.additionalImage || ''"
     />
   </PublicHero>
   <PublicCenterText title="“因为，我们在。”" class="my-20">
@@ -99,10 +100,11 @@ const projectList = [
   },
   {
     title: '29所学校，494名玩家。',
-    text: '（MUA白标）<br /><br />我们发起倡议，与中国Minecraft高校联盟合作，为高考学子加油助威。<br />用我们所制作的高校复原，共同展现高校联合的力量。<br /><br />2023.6.25',
+    text: '我们发起倡议，与中国Minecraft高校联盟合作，为高考学子加油助威。<br />用我们所制作的高校复原，共同展现高校联合的力量。<br /><br />2023.6.25',
     image: 'VP9:/media/myuniversity/vp9.webm,mp4:/media/myuniversity/265.mp4',
     link: '',
     isVideo: true,
+    additionalImage: 'logo/mua_white.png',
     backupImg: 'FirstAnni/BackupImg.png',
   },
   {

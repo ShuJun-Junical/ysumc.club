@@ -1,6 +1,12 @@
 <template>
   <div class="py-16 pl-10 w-full">
     <h1 class="text-3xl md:text-5xl font-ysumc">{{ props.title }}</h1>
+    <NuxtPicture
+      v-if="props.additionalImage"
+      :src="props.additionalImage"
+      class="block w-40 mt-4"
+      fit="inside"
+    />
     <p
       class="text-base md:text-lg mt-10 mb-6"
       v-html="props.text"
@@ -18,6 +24,7 @@
 const props = defineProps<{
   title: string
   text?: string
+  additionalImage?: string
   button: {
     text?: string
     link?: string
