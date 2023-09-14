@@ -3,10 +3,13 @@
     <div class="max-w-7xl mx-auto flex items-center">
       <div class="mr-auto max-w-2xl">
         <div class="flex mb-4 items-center">
-          <h1 class="text-7xl"><b>我们联合</b></h1>
+          <NuxtImg
+            class="h-12"
+            :src="dark ? 'logo/mua_slogan_white.svg' : 'logo/mua_slogan.svg'"
+          />
           <NuxtImg
             :src="dark ? 'logo/mua_white.svg' : 'logo/mua.svg'"
-            class="h-10 ml-auto"
+            class="h-10 ml-auto mr-2"
           ></NuxtImg>
         </div>
         <p class="text-xl leading-normal font-normal">
