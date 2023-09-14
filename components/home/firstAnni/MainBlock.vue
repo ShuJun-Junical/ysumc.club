@@ -1,7 +1,7 @@
 <template>
   <div class="py-16 px-6 md:px-10 w-full">
     <h1 class="text-3xl md:text-5xl font-ysumc">{{ props.title }}</h1>
-    <NuxtPicture
+    <NuxtImg
       v-if="props.additionalImage"
       :src="props.additionalImage"
       class="block w-32 mt-4"

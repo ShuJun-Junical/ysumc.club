@@ -104,7 +104,7 @@ const projectList = [
     image: 'VP9:/media/myuniversity/vp9.webm,mp4:/media/myuniversity/265.mp4',
     link: '',
     isVideo: true,
-    additionalImage: 'logo/mua_white.png',
+    additionalImage: 'logo/mua_white.svg',
     backupImg: 'FirstAnni/BackupImg.png',
   },
   {

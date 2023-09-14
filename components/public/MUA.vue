@@ -5,7 +5,7 @@
         <div class="flex mb-4 items-center">
           <h1 class="text-7xl"><b>我们联合</b></h1>
           <NuxtImg
-            :src="dark ? 'logo/mua_white.png' : 'logo/mua.svg'"
+            :src="dark ? 'logo/mua_white.svg' : 'logo/mua.svg'"
             class="h-10 ml-auto"
           ></NuxtImg>
         </div>
