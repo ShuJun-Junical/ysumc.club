@@ -44,7 +44,7 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.scss'],
-  modules: ['@nuxt/image', 'nuxt-simple-sitemap'],
+  modules: ['@nuxt/image', 'nuxt-simple-sitemap', '@nuxt/content'],
   ssr: true,
   image: {
     quality: 85,
@@ -53,5 +53,11 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://ysumc.club',
+  },
+  content: {
+    // https://content.nuxtjs.org/api/configuration
+    documentDriven: {
+      injectPage: true,
+    },
   },
 })

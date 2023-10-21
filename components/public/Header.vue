@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed w-full z-30 backdrop-blur-lg shadow-lg">
+  <header class="fixed w-full z-30 backdrop-blur-lg shadow-lg top-0">
     <div
       class="mx-3 md:mx-10 flex items-center justify-between transition-all duration-300 ease-in-out h-10"
     >

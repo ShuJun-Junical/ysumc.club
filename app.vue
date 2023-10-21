@@ -1,7 +1,12 @@
 <template>
-  <NuxtLayout class="flex flex-col min-h-screen overflow-hidden heti">
+  <!-- <NuxtLayout class="flex flex-col min-h-screen overflow-hidden heti">
+  </NuxtLayout> -->
+  <PublicHeader />
+  <main class="grow bg-base-white">
     <NuxtPage />
-  </NuxtLayout>
+  </main>
+  <PublicBackTop />
+  <PublicFooter />
 </template>
 <script setup lang="ts">
 const { $Heti } = useNuxtApp()
