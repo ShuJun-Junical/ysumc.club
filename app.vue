@@ -1,6 +1,4 @@
 <template>
-  <!-- <NuxtLayout class="flex flex-col min-h-screen overflow-hidden heti">
-  </NuxtLayout> -->
   <PublicHeader />
   <main class="grow bg-base-white">
     <NuxtPage />
@@ -11,8 +9,11 @@
 <script setup lang="ts">
 const { $Heti } = useNuxtApp()
 onMounted(() => {
+  // 中文排版美化
   const heti = new $Heti('.heti')
   heti.autoSpacing() // 自动进行中西文混排美化和标点挤压
+
+  // 百度统计代码
   var _hmt = _hmt || []
   ;(function () {
     var hm = document.createElement('script')
