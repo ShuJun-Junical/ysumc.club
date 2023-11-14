@@ -44,20 +44,23 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.scss'],
-  modules: ['@nuxt/image', 'nuxt-simple-sitemap', '@nuxt/content'],
+  modules: ['@nuxt/image', 'nuxt-simple-sitemap'],
   ssr: true,
   image: {
     quality: 85,
-    format: ['avif', 'webp', 'jpg'],
+    format: ['webp'],
     dir: 'assets/image',
+    screens: {
+      xs: 768,
+      sm: 768,
+      md: 1280,
+      lg: 1280,
+      xl: 1536,
+      xxl: 1536,
+      '2xl': 1536,
+    },
   },
   site: {
     url: 'https://ysumc.club',
-  },
-  content: {
-    // https://content.nuxtjs.org/api/configuration
-    documentDriven: {
-      injectPage: true,
-    },
   },
 })
