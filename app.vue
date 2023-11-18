@@ -40,6 +40,7 @@ function setNavBar(
   if (color === 'white' || color === 'black' || color === 'gray')
     navBar.value.color = color
 }
+
 provide('isOutlink', isOutlink)
 provide('setNavBar', setNavBar)
 </script>

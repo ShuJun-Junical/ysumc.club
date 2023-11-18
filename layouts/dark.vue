@@ -3,7 +3,3 @@
     <slot />
   </div>
 </template>
-<script setup>
-const setNavBar = inject('setNavBar')
-setNavBar(null, 'black')
-</script>
