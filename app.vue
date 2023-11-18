@@ -1,5 +1,5 @@
 <template>
-  <PublicHeader />
+  <PublicHeader :is-transparent="navBar.isTransparent" :color="navBar.color" />
   <main class="grow bg-base-white">
     <NuxtPage />
   </main>
@@ -7,6 +7,10 @@
   <PublicFooter />
 </template>
 <script setup lang="ts">
+const navBar = ref({
+  isTransparent: undefined,
+  color: undefined,
+})
 const { $Heti } = useNuxtApp()
 onMounted(() => {
   // 中文排版美化
@@ -27,5 +31,15 @@ function isOutlink(link: string | undefined) {
   const reg = /^http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?$/
   return link ? reg.test(link) : false
 }
+function setNavBar(
+  isTransparent?: boolean,
+  color?: 'white' | 'black' | 'gray',
+) {
+  if (isTransparent === true || isTransparent === false)
+    navBar.value.isTransparent = isTransparent
+  if (color === 'white' || color === 'black' || color === 'gray')
+    navBar.value.color = color
+}
 provide('isOutlink', isOutlink)
+provide('setNavBar', setNavBar)
 </script>

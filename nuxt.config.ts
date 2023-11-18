@@ -44,7 +44,7 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.scss'],
-  modules: ['@nuxt/image', 'nuxt-simple-sitemap'],
+  modules: ['@nuxt/image', 'nuxt-simple-sitemap', '@vueuse/nuxt'],
   ssr: true,
   image: {
     quality: 85,
