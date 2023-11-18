@@ -81,6 +81,11 @@
 definePageMeta({
   layout: 'dark',
 })
+const setNavBar = inject('setNavBar')
+setNavBar(null, 'black')
+onBeforeRouteLeave(() => {
+  setNavBar(null, 'white')
+})
 const projectList = [
   {
     title: '三千一百万方块。',
