@@ -20,8 +20,8 @@
 </template>
 <script setup lang="ts">
 const { page, toc } = useContent()
-// useContentHead(page)
-// console.log(toc)
+useContentHead(page)
+console.log(toc)
 const classNames = {
   headings: ['text-black'],
   p: ['text-black'],

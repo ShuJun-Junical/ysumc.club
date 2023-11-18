@@ -1,6 +1,5 @@
 ---
 title: 服务器部署
-subtitle: 网络服务器服务器
 description: 本教程是建立在您已经能够架设一个Minecraft Java版服务器的基础上进行教学的，在本篇中，我们会深入讨论群组、模组服、生电服架设，MCDR、MCSM等守护进程的使用，Java优化，报错解决等各方面的Minecraft Java版服务器运维知识。
 date: 2023-09-18
 toc: false
