@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full relative overflow-hidden">
+  <div class="w-full relative overflow-hidden" ref="target">
     <div
       class="relative h-screen jarallax flex items-center justify-center"
       ref="jarallax"
@@ -22,6 +22,10 @@
 <script setup lang="ts">
 const { $jarallax, $jarallaxVideo } = useNuxtApp()
 const jarallax = ref()
+const target = ref()
+const setNavBar = inject('setNavBar')
+
+const inViewport = ref(false)
 
 const props = defineProps<{
   image: string
@@ -48,4 +52,31 @@ onMounted(() => {
     // imgPosition: '50% 50%',
   })
 })
+
+const { stop } = useIntersectionObserver(
+  target,
+  ([{ isIntersecting }], observerElement) => {
+    if (isIntersecting) {
+      if (process.client) {
+        window.addEventListener('scroll', handleScroll)
+      }
+    } else {
+      if (process.client) {
+        setNavBar(false)
+        window.removeEventListener('scroll', handleScroll)
+      }
+    }
+  },
+)
+
+function handleScroll() {
+  if (process.client) {
+    const a = target.value.getBoundingClientRect()
+    if (a.top < 40 && a.bottom > 0) {
+      setNavBar(true)
+    } else {
+      // setNavBar(false)
+    }
+  }
+}
 </script>
