@@ -22,7 +22,7 @@
     "tailwindcss": "^3.3.5"
   },
   "dependencies": {
-    "@nuxt/image": "^1.0.0",
+    "@nuxt/image": "1.0.0-rc.1",
     "@vueuse/nuxt": "^10.6.1",
     "aos": "^2.3.4",
     "heti-findandreplacedomtext": "^0.5.0",
