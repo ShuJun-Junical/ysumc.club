@@ -1,8 +1,9 @@
 <template>
-  <header class="fixed w-full z-30 backdrop-blur-lg shadow-lg top-0">
-    <div
-      class="mx-3 md:mx-10 flex items-center justify-between transition-all duration-300 ease-in-out h-10"
-    >
+  <header
+    class="fixed w-full z-30 shadow-lg top-0 transition-all duration-300 ease-in-out"
+    :class="['backdrop-blur-lg', 'bg-white', 'bg-black-dark'][resColor]"
+  >
+    <div class="mx-3 md:mx-10 flex items-center justify-between h-10">
       <!-- Site branding -->
       <NuxtLink
         to="/"
@@ -10,11 +11,15 @@
         aria-label="YSUMC"
       >
         <NuxtImg
-          src="logo/ysumc-white.svg"
+          :src="
+            resColor === 1 ? 'logo/ysumc-color.svg' : 'logo/ysumc-white.svg'
+          "
           class="transition-all duration-300 ease-in-out h-6"
           fit="contain"
         />
-        <span class="text-white text-base pl-3 font-ysumc hidden md:inline"
+        <span
+          class="text-base pl-3 font-ysumc hidden md:inline transition-all duration-300 ease-in-out"
+          :class="['text-white', 'text-black', 'text-white'][resColor]"
           >燕山大学Minecraft学生同好者协会</span
         >
       </NuxtLink>
@@ -27,7 +32,8 @@
             <NuxtLink
               :to="i.isMenu ? '' : i.link"
               :target="$isOutlink(i.link) ? '_blank' : ''"
-              class="text-base font-medium text-white hover:text-gray-300 px-3 xl:px-5 py-2 flex items-center transition ease-in-out"
+              class="text-base font-medium hover:text-gray-300 px-3 xl:px-5 py-2 flex items-center transition ease-in-out"
+              :class="['text-white', 'text-black', 'text-white'][resColor]"
             >
               {{ i.name }}{{ i.isMenu ? ' ▾' : '' }}
             </NuxtLink>
@@ -131,6 +137,21 @@ const router = useRouter()
 router.beforeEach((to, from) =>
   mobileNavOpen.value ? (mobileNavOpen.value = false) : true,
 )
+
+const props = withDefaults(
+  defineProps<{
+    color?: 'black' | 'white'
+    isTransparent?: boolean
+  }>(),
+  {
+    color: 'white',
+    isTransparent: true,
+  },
+)
+
+const resColor = computed(() => {
+  return props.isTransparent ? 0 : props.color === 'white' ? 1 : 2
+})
 
 const NavBarList = [
   {
