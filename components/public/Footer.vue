@@ -3,7 +3,7 @@
     class="bg-no-repeat bg-center bg-cover text-white py-4"
     :style="{ 'background-image': `url(${footerBkg})` }"
   >
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto px-6 md:px-4">
       <div class="grid grid-cols-12 pb-4 pt-8">
         <!-- First block -->
         <div class="col-span-6 md:col-span-3 flex flex-col md:justify-between">
