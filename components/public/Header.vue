@@ -65,7 +65,8 @@
         <button @click="mobileNavOpen = !mobileNavOpen">
           <span class="sr-only">Menu</span>
           <svg
-            class="w-6 h-6 fill-white"
+            class="w-6 h-6"
+            :class="resColor === 1 ? 'fill-black' : 'fill-white'"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
