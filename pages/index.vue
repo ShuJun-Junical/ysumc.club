@@ -82,7 +82,9 @@ definePageMeta({
   layout: 'dark',
 })
 const setNavBar = inject('setNavBar')
-setNavBar(null, 'black')
+onMounted(() => {
+  setNavBar(true, 'black')
+})
 onBeforeRouteLeave(() => {
   setNavBar(null, 'white')
 })
