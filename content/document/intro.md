@@ -4,9 +4,9 @@ description: 本教程是建立在您已经能够架设一个Minecraft Java版�
 date: 2023-09-18
 toc: false
 image: /path/of/image.png
-cover: /path/of/cover/image.png
-tag:
 ---
+
+<!-- # 废物器部署 -->
 
 ## 引语
 

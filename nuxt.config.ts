@@ -44,7 +44,12 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.scss'],
-  modules: ['@nuxt/image', 'nuxt-simple-sitemap', '@nuxt/content', '@vueuse/nuxt'],
+  modules: [
+    '@nuxt/image',
+    'nuxt-simple-sitemap',
+    '@nuxt/content',
+    '@vueuse/nuxt',
+  ],
   ssr: true,
   image: {
     quality: 85,
@@ -65,7 +70,7 @@ export default defineNuxtConfig({
   },
   content: {
     documentDriven: {
-      injectPage: true,
+      injectPage: false,
     },
   },
 })
