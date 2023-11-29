@@ -23,4 +23,5 @@ export default [
   '/_ipx/w_1024&f_png/egg/o1.png',
   '/_ipx/w_1280&f_png/egg/o1.png',
   '/_ipx/w_1536&f_png/egg/o1.png',
+  '/_ipx/fit_contain/logo/ysumc-color.svg',
 ]

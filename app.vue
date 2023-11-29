@@ -31,14 +31,10 @@ function isOutlink(link: string | undefined) {
   const reg = /^http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?$/
   return link ? reg.test(link) : false
 }
-function setNavBar(
-  isTransparent?: boolean,
-  color?: 'white' | 'black' | 'gray',
-) {
+function setNavBar(isTransparent?: boolean, color?: 'white' | 'black') {
   if (isTransparent === true || isTransparent === false)
     navBar.value.isTransparent = isTransparent
-  if (color === 'white' || color === 'black' || color === 'gray')
-    navBar.value.color = color
+  if (color === 'white' || color === 'black') navBar.value.color = color
 }
 
 provide('isOutlink', isOutlink)
