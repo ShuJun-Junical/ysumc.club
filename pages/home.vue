@@ -14,7 +14,7 @@
   </PublicHero>
   <PublicCenterText title="我社简介">
     燕山大学Minecraft学生同好者协会（也可以叫燕山大学MC社）成立于2022年9月13日，<br />
-    是以游戏《我的世界》（Minecraft）为核心开展同好活动和专业项目的学生社团，<br />
+    是以游戏《原神》（Minecraft）为核心开展同好活动和专业项目的学生社团，<br />
     <br />
     <strong
       >值得骄傲的是：我们是燕山大学第一个被学校官方承认的游戏社团。 </strong

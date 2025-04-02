@@ -38,12 +38,12 @@ const link = [
   },
   {
     name: 'bili',
-    link: 'https://space.bilibili.com/353195087',
+    link: 'https://ys.mihoyo.com/main/',
     icon: 'socicon-niconico',
   },
   {
     name: 'skin',
-    link: 'http://skin.ysumc.club/',
+    link: 'http://skin.ysumc.net/',
     icon: 'mobi-mbri-website-theme ',
   },
 ]

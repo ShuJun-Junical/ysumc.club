@@ -71,7 +71,7 @@ const content = [
     items: [
       {
         name: '皮肤站教程',
-        link: 'https://blog.ysumc.club/index.php/%E6%95%99%E7%A8%8B/54.html',
+        link: 'https://blog.ysumc.net/index.php/%E6%95%99%E7%A8%8B/54.html',
       },
       { name: '游戏配置' },
       { name: '我社报道' },
@@ -105,7 +105,7 @@ const content = [
       { name: '燕山大学官方网站', link: 'http://ysu.edu.cn/' },
       {
         name: '燕山大学Minecraft同好者协会皮肤站',
-        link: 'http://skin.ysumc.club/',
+        link: 'http://skin.ysumc.net/',
       },
     ],
   },
@@ -114,7 +114,7 @@ const content = [
 const externalLink = [
   {
     name: 'skin',
-    link: 'http://skin.ysumc.club/',
+    link: 'http://skin.ysumc.net/',
     icon: 'mobi-mbri-website-theme',
   },
   {

@@ -12,7 +12,7 @@
       >
         <NuxtImg
           :src="
-            resColor === 1 ? 'logo/ysumc-color.svg' : 'logo/ysumc-white.svg'
+            resColor === 1 ? 'logo/ysumc-color.svg' : 'genshin/logo_white.svg'
           "
           class="transition-all duration-300 ease-in-out h-6"
           fit="contain"
@@ -20,7 +20,7 @@
         <span
           class="text-base pl-3 font-ysumc hidden md:inline transition-all duration-300 ease-in-out"
           :class="['text-white', 'text-black', 'text-white'][resColor]"
-          >燕山大学Minecraft学生同好者协会</span
+          >燕山大学原神学生同好者协会</span
         >
       </NuxtLink>
 
@@ -166,10 +166,10 @@ const NavBarList = [
     contents: [
       {
         name: '皮肤站设置',
-        link: 'https://blog.ysumc.club/index.php/%E6%95%99%E7%A8%8B/54.html',
+        link: 'https://blog.ysumc.net/index.php/%E6%95%99%E7%A8%8B/54.html',
       },
       { name: '我社报道', link: '/document' },
-      { name: 'MC社网盘', link: 'http://cloud.ysumc.club' },
+      { name: 'MC社网盘', link: 'http://cloud.ysumc.net' },
     ],
   },
   {
@@ -180,7 +180,7 @@ const NavBarList = [
   {
     name: '皮肤站',
     isMenu: false,
-    link: 'https://skin.ysumc.club',
+    link: 'https://skin.ysumc.net',
   },
   {
     name: '联系我们',

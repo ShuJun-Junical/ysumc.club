@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     // pageTransition: true,
     // layoutTransition: true,
     head: {
-      title: '燕山大学MC社',
+      title: '燕山大学原神社',
       charset: 'utf-8',
       link: [
         {
@@ -61,6 +61,6 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    url: 'https://ysumc.club',
+    url: 'https://ysumc.net',
   },
 })
