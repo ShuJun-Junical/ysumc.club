@@ -1,11 +1,12 @@
 <template>
   <div class="w-full overflow-hidden" ref="target">
     <div class="jarallax" ref="jarallax">
-      <NuxtPicture
+      <img
         v-if="!props.isVideo"
-        :src="props.image"
+        :src="`/image/${props.image}`"
         class="absolute m-auto inset-0 -z-10 jarallax-img"
         :class="props.dark ? `brightness-[${props.dark}]` : ''"
+        alt="Parallax Background"
       />
       <slot></slot>
     </div>

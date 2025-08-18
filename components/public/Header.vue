@@ -10,12 +10,12 @@
         class="shrink-0 mr-4 flex items-center"
         aria-label="YSUMC"
       >
-        <NuxtImg
+        <img
           :src="
-            resColor === 1 ? 'logo/ysumc-color.svg' : 'genshin/logo_white.svg'
+            `/image/${resColor === 1 ? 'logo/ysumc-color.svg' : 'logo/ysumc-text.svg'}`
           "
           class="transition-all duration-300 ease-in-out h-6"
-          fit="contain"
+          alt="YSUMC Logo"
         />
         <span
           class="text-base pl-3 font-ysumc hidden md:inline transition-all duration-300 ease-in-out"

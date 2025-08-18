@@ -5,14 +5,16 @@
     >
       <div class="mr-auto max-w-2xl">
         <div class="flex mb-4 items-center md:flex-row flex-col">
-          <NuxtImg
+          <img
             class="h-12"
-            :src="dark ? 'logo/mua_slogan_white.svg' : 'logo/mua_slogan.svg'"
+            :src="`/image/logo/${dark ? 'mua_slogan_white.svg' : 'mua_slogan.svg'}`"
+            alt="MUA Slogan"
           />
-          <NuxtImg
-            :src="dark ? 'logo/mua_white.svg' : 'logo/mua.svg'"
+          <img
+            :src="`/image/logo/${dark ? 'mua_white.svg' : 'mua.svg'}`"
             class="h-10 md:ml-auto md:mr-2 md:mt-0 mt-6"
-          ></NuxtImg>
+            alt="MUA Logo"
+          />
         </div>
         <p class="text-base md:text-xl leading-normal font-normal md:mt-0 mt-6">
           我们并不孤独：不仅是我们，国内其他的著名高校也拥有着自己原神同好群体甚至是原神游戏社团。我们彼此联谊，精诚合作，联合高校原神同好群体的力量，共同面对未来的挑战。

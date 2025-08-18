@@ -1,17 +1,18 @@
 <template>
   <div
     class="w-full"
-    :class="props.image ? 'jarallax py-14' : 'py-0'"
+    :class="props?.image ? 'jarallax py-14' : 'py-0'"
     ref="jarallaxitem"
   >
-    <NuxtPicture
-      :src="props.image"
-      class="jarallax-img brightness-50"
-      v-if="props.image"
-    />
+    <img
+        :src="`/image/${props?.image}`"
+        class="jarallax-img brightness-50"
+        v-if="props?.image"
+        alt="Countdown Background"
+      />
     <div class="text-center text-white max-w-4xl mx-auto">
-      <h1 class="text-2xl md:text-5xl font-ysumc" v-if="props.title">
-        {{ props.title }}
+      <h1 class="text-2xl md:text-5xl font-ysumc" v-if="props?.title">
+        {{ props?.title }}
       </h1>
       <div class="flex items-end mt-14 mb-8">
         <div class="w-1/4" v-for="(i, index) in countDown" :key="index">
@@ -35,6 +36,12 @@ const jarallaxitem = ref(null)
 
 const units = ['天', '时', '分', '秒']
 
+const props = defineProps<{
+  title?: string
+  image?: string
+  time: Date
+}>()
+
 updateTime()
 
 watchEffect(() => {
@@ -46,13 +53,7 @@ onUnmounted(() => {
   clearInterval(timer)
 })
 
-const props = defineProps<{
-  title?: string
-  image?: string
-  time: Date
-}>()
-
-if (props.image)
+if (props?.image)
   onMounted(() => {
     $jarallax(jarallaxitem.value, {
       speed: 0.6,
@@ -65,6 +66,8 @@ function numProcess(num: number) {
 }
 
 function updateTime() {
+  if (!props || !props.time) return
+  
   currentTime.value = new Date()
   const nowTime = currentTime.value.getTime()
   const dateTime = props.time.getTime()

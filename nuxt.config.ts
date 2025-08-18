@@ -2,6 +2,7 @@
 import prerenderList from './prerenderList'
 export default defineNuxtConfig({
   nitro: {
+    compatibilityDate: '2025-08-19',
     prerender: {
       routes: prerenderList,
     },
@@ -44,12 +45,22 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.scss'],
-  modules: ['@nuxt/image', 'nuxt-simple-sitemap', '@vueuse/nuxt'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+          silenceDeprecations: ['legacy-js-api', 'import']
+        }
+      }
+    }
+  },
+  modules: ['@vueuse/nuxt'],
   ssr: true,
   image: {
     quality: 85,
-    format: ['webp'],
-    dir: 'assets/image',
+    format: [],
+    dir: 'public/image',
     screens: {
       xs: 768,
       sm: 768,

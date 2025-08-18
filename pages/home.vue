@@ -2,7 +2,7 @@
   <PublicHero image="Index/Hero.png" class="mb-14">
     <div class="absolute bottom-36 md:top-[23%] left-4 md:left-8">
       <div class="w-full">
-        <NuxtImg src="logo/ysumc-text.svg" class="h-20 md:h-32" />
+        <img src="/image/logo/ysumc-text.svg" class="h-20 md:h-32" alt="YSUMC Logo" />
       </div>
       <div
         class="mt-6 md:mt-16 ml-3 text-[3.2rem] md:text-[5.5rem] text-white font-normal leading-tight font-ysumc"

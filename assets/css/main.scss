@@ -1,16 +1,14 @@
+// Import external stylesheets (using @import for compatibility)
+@import 'node_modules/aos/src/sass/aos.scss';
+@import '../external/socicon/css/styles.css';
+@import '../external/mobirise-icons2/mobirise2.css';
+
+// AOS styles configuration
+$aos-distance: 10px;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-// AOS styles
-$aos-distance: 10px;
-@import 'node_modules/aos/src/sass/aos.scss';
-
-// Socion Icons
-@import '../external/socicon/css/styles.css';
-
-// Mobirise Icons
-@import '../external/mobirise-icons2/mobirise2.css';
 
 // Heti Add-on
 heti-spacing {

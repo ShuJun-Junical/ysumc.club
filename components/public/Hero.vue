@@ -4,11 +4,12 @@
       class="relative h-screen jarallax flex items-center justify-center"
       ref="jarallax"
     >
-      <NuxtPicture
+      <img
         v-if="!props.isVideo || props.backupImg"
-        :src="props.isVideo ? props.backupImg : props.image"
-        class="absolute m-auto inset-0 -z-10 jarallax-img"
+        :src="`/image/${props.isVideo ? props.backupImg : props.image}`"
+        class="absolute m-auto inset-0 -z-10 jarallax-img w-full h-full object-cover"
         :class="props.dark ? `brightness-[${props.dark}]` : ''"
+        alt="Hero image"
       />
       <div v-if="title || text" class="text-white text-center">
         <h1 v-if="title" class="text-5xl font-ysumc">{{ props.title }}</h1>
@@ -70,7 +71,7 @@ const { stop } = useIntersectionObserver(
 )
 
 function handleScroll() {
-  if (process.client) {
+  if (process.client && target.value) {
     const a = target.value.getBoundingClientRect()
     if (a.top < 40 && a.bottom > 0) {
       setNavBar(true)

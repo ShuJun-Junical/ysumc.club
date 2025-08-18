@@ -3,10 +3,11 @@
     class="genshin flex items-center justify-center fixed top-0 left-0"
     ref="white"
   >
-    <NuxtPicture
-      :src="img.src"
+    <img
+      :src="`/image/${img.src}`"
       class="gi-img"
       :style="`opacity: ${img.opacity}`"
+      alt="Genshin Egg"
     />
     <audio src="/media/o.mp3" autoplay="autoplay" ref="audio"></audio>
   </div>

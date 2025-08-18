@@ -8,7 +8,7 @@
         <!-- First block -->
         <div class="col-span-6 md:col-span-3 flex flex-col md:justify-between">
           <NuxtLink to="/" class="inline-block" aria-label="YSUMC">
-            <NuxtImg src="genshin/logo_text_white.svg" class="w-96" />
+            <img src="/image/logo/ysumc-text.svg" class="h-8" alt="YSUMC Logo" />
           </NuxtLink>
           <div class="flex md:gap-2 mt-4 md:mt-0">
             <a

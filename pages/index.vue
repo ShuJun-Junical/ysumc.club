@@ -3,7 +3,7 @@
     <PublicHero image="genshin/hero.png">
       <div class="absolute bottom-36 md:top-[23%] left-4 md:left-8">
         <div class="w-full">
-          <NuxtImg src="genshin/logo_text_white.svg" class="h-20 md:h-32" />
+          <img src="/image/genshin/logo_text_white.svg" class="h-20 md:h-32" alt="Genshin Logo" />
         </div>
         <!-- <p class="font-ysumc text-3xl">一周年纪念</p> -->
         <div
@@ -87,10 +87,10 @@ definePageMeta({
 })
 const setNavBar = inject('setNavBar')
 onMounted(() => {
-  setNavBar(true, 'black')
+(setNavBar as (arg1: boolean, arg2: string) => void)(true, 'black')
 })
 onBeforeRouteLeave(() => {
-  setNavBar(null, 'white')
+(setNavBar as (arg1: boolean | null, arg2: string) => void)(null, 'white')
 })
 const projectList = [
   {
