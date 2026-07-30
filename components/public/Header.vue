@@ -12,7 +12,7 @@
       >
         <NuxtImg
           :src="
-            resColor === 1 ? 'logo/ysumc-color.svg' : 'genshin/logo_white.svg'
+            resColor === 1 ? 'logo/ysumc-color.svg' : 'logo/ysumc-white.svg'
           "
           class="transition-all duration-300 ease-in-out h-6"
           fit="contain"
@@ -20,7 +20,7 @@
         <span
           class="text-base pl-3 font-ysumc hidden md:inline transition-all duration-300 ease-in-out"
           :class="['text-white', 'text-black', 'text-white'][resColor]"
-          >燕山大学原神学生同好者协会</span
+          >燕山大学Minecraft学生同好者协会</span
         >
       </NuxtLink>
 

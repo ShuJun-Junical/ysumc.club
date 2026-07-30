@@ -38,7 +38,7 @@ const link = [
   },
   {
     name: 'bili',
-    link: 'https://ys.mihoyo.com/main/',
+    link: 'https://space.bilibili.com/353195087',
     icon: 'socicon-niconico',
   },
   {

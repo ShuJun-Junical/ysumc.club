@@ -8,7 +8,7 @@
         <!-- First block -->
         <div class="col-span-6 md:col-span-3 flex flex-col md:justify-between">
           <NuxtLink to="/" class="inline-block" aria-label="YSUMC">
-            <NuxtImg src="genshin/logo_text_white.svg" class="w-96" />
+            <NuxtImg src="logo/ysumc-text.svg" class="w-96" />
           </NuxtLink>
           <div class="flex md:gap-2 mt-4 md:mt-0">
             <a
@@ -49,11 +49,11 @@
         <div class="text-[0.7rem] md:text-sm mr-4 content-start">
           {{ new Date().getFullYear() }}{{ ' ' }}
           &copy;
-          本社所有文案，图片均由燕山大学原神学生同好者协会制作，未经允许，切勿盗取挪用，如若发现，将采取法律手段进行维权。
+          本社所有文案，图片均由燕山大学Minecraft学生同好者协会制作，未经允许，切勿盗取挪用，如若发现，将采取法律手段进行维权。
         </div>
         <div class="text-[0.7rem] md:text-sm mr-4 content-end mt-2 md:mt-0">
           <a href="https://beian.miit.gov.cn" target="_blank"
-            >黔ICP备2022009898号-2</a
+            >黔ICP备2022009898号-1</a
           >
         </div>
       </div>
@@ -62,7 +62,6 @@
 </template>
 
 <script setup lang="ts">
-import { link } from 'fs'
 import footerBkg from '~/assets/image/footer-bkg.png'
 const $isOutlink = inject('isOutlink')
 const content = [
@@ -70,10 +69,13 @@ const content = [
     title: '资料',
     link: '/document',
     items: [
-      { name: '皮肤站教程', link: 'https://ys.mihoyo.com/main/' },
-      { name: '游戏配置', link: 'https://ys.mihoyo.com/main/' },
-      { name: '我社报道', link: 'https://ys.mihoyo.com/main/' },
-      { name: '视觉形象', link: 'https://ys.mihoyo.com/main/' },
+      {
+        name: '皮肤站教程',
+        link: 'https://blog.ysumc.net/index.php/%E6%95%99%E7%A8%8B/54.html',
+      },
+      { name: '游戏配置' },
+      { name: '我社报道' },
+      { name: '视觉形象', link: '/document/visual-identity' },
     ],
   },
   // {
@@ -95,7 +97,7 @@ const content = [
         name: '西安建筑科技大学',
         link: 'https://www.xauatcraft.com/',
       },
-      { name: '塔里木大学', link: 'https://www.tarucraft.club' },
+      { name: '塔里木大学', link: 'https://www.tarucraft.net' },
     ],
   },
   {
@@ -103,7 +105,7 @@ const content = [
     items: [
       { name: '燕山大学官方网站', link: 'http://ysu.edu.cn/' },
       {
-        name: '燕山大学原神社皮肤站',
+        name: '燕山大学MC社皮肤站',
         link: 'http://skin.ysumc.net/',
       },
     ],
@@ -117,7 +119,7 @@ const externalLink = [
   },
   {
     name: 'bili',
-    link: 'https://ys.mihoyo.com/main/',
+    link: 'https://space.bilibili.com/353195087',
     icon: 'socicon-niconico',
   },
   {
@@ -125,6 +127,6 @@ const externalLink = [
     link: 'https://jq.qq.com/?_wv=1027&k=NLcAidqm',
     icon: 'socicon-qq',
   },
-  { name: 'afd', link: 'https://ys.mihoyo.com/main/', icon: 'mobi-mbri-cash' },
+  { name: 'afd', link: 'https://afdian.net/a/yusmc/', icon: 'mobi-mbri-cash' },
 ]
 </script>

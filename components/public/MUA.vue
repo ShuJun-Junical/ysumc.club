@@ -15,7 +15,7 @@
           ></NuxtImg>
         </div>
         <p class="text-base md:text-xl leading-normal font-normal md:mt-0 mt-6">
-          我们并不孤独：不仅是我们，国内其他的著名高校也拥有着自己原神同好群体甚至是原神游戏社团。我们彼此联谊，精诚合作，联合高校原神同好群体的力量，共同面对未来的挑战。
+          我们并不孤独：不仅是我们，国内其他的著名高校也拥有着自己Minecraft同好群体甚至是Minecraft游戏社团。我们彼此联谊，精诚合作，联合高校Minecraft同好群体的力量，共同面对未来的挑战。
         </p>
       </div>
       <div class="flex mr-auto gap-4 md:ml-auto md:mr-0 mt-6 md:mt-0">

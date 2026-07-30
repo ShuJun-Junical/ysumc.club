@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     // pageTransition: true,
     // layoutTransition: true,
     head: {
-      title: '燕山大学原神社',
+      title: '燕山大学MC社',
       charset: 'utf-8',
       link: [
         {
