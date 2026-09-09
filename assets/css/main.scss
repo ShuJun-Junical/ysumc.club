@@ -1,10 +1,13 @@
+// Import AOS modules directly; its entrypoint still uses deprecated @import.
+@use 'aos/src/sass/core';
+@use 'aos/src/sass/easing';
+@use 'aos/src/sass/animations' with (
+  $aos-distance: 10px
+);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-// AOS styles
-$aos-distance: 10px;
-@import 'node_modules/aos/src/sass/aos.scss';
 
 // Socion Icons
 @import '../external/socicon/css/styles.css';

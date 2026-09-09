@@ -1,7 +1,34 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { existsSync } from 'node:fs'
+import { createRequire } from 'node:module'
+import { dirname, isAbsolute, join } from 'node:path'
+import { pathToFileURL } from 'node:url'
 import prerenderList from './prerenderList'
+
+// nuxt-simple-sitemap 3.x uses the route-rules path from older Nitro releases.
+const nitroRuntimeDir = join(
+  dirname(createRequire(import.meta.url).resolve('nitropack/package.json')),
+  'dist/runtime',
+)
+const legacyRouteRules = join(nitroRuntimeDir, 'route-rules.mjs')
+
 export default defineNuxtConfig({
+  hooks: {
+    'nitro:build:before'(nitro) {
+      // Image rc.1 resolves this prerender directory as a URL, including on Windows.
+      const ipx = nitro.options._config.runtimeConfig?.ipx
+      if (typeof ipx?.dir === 'string' && isAbsolute(ipx.dir)) {
+        ipx.dir = pathToFileURL(ipx.dir).href
+      }
+    },
+  },
   nitro: {
+    compatibilityDate: '2026-09-09',
+    alias: {
+      '#internal/nitro/route-rules': existsSync(legacyRouteRules)
+        ? legacyRouteRules
+        : join(nitroRuntimeDir, 'internal/route-rules.mjs'),
+    },
     prerender: {
       routes: prerenderList,
     },
@@ -37,6 +64,16 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          // Nuxt 3.7 uses Vite 4; the modern Sass API requires Vite >= 5.4.
+          silenceDeprecations: ['legacy-js-api'],
+        },
+      },
+    },
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
