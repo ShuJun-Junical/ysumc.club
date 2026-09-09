@@ -213,7 +213,7 @@ function keyHandler(e: any) {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .nav-button:hover > .dropdown-menu {
   display: block;
 }

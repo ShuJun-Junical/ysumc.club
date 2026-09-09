@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.8.2",
-    "@nuxt/devtools": "latest",
+    "@nuxt/devtools": "^1.7.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^18.17.3",
     "autoprefixer": "^10.4.15",
@@ -28,5 +28,8 @@
     "axios": "^1.6.2",
     "heti-findandreplacedomtext": "^0.5.0",
     "jarallax": "^2.1.4"
+  },
+  "allowScripts": {
+    "sharp@0.32.6": true
   }
 }
