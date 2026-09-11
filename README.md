@@ -1,5 +1,8 @@
 # 燕大MC社官网
 
+> [!IMPORTANT]
+> 该仓库使用旧的Nuxt3/Nuxt Content2技术栈，由于过于古早和大量兼容性问题，已停更，新仓库在 [ShuJun-Junical/ysumc.net](https://github.com/ShuJun-Junical/ysumc.net)
+
 ## 警告 ⚠️
 
 - 不要将Nuxt更新到3.8版本，请使用3.7.x！！！
